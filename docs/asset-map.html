@@ -1,0 +1,378 @@
+<title>Drive Asset Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600;12..96,75..100,700;12..96,75..100,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+
+<style>
+:root {
+  --paper:   #F6F2E8;
+  --panel:   #EFE9DC;
+  --ink:     #2A0A12;
+  --muted:   rgba(42,10,18,0.60);
+  --rule:    rgba(42,10,18,0.14);
+  --rule-hi: rgba(42,10,18,0.30);
+  --pink:    #F0246F;
+  --rose:    #F49CB8;
+  --butter:  #F5E3AE;
+  --oxblood: #5E0E1C;
+  --taupe:   #CBBBAE;
+  --maxw:    1080px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #16070C; --panel: #200A11; --ink: #F2E9DD;
+    --muted: rgba(242,233,221,0.60); --rule: rgba(242,233,221,0.15);
+    --rule-hi: rgba(242,233,221,0.32); --pink: #FF4C87;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #16070C; --panel: #200A11; --ink: #F2E9DD;
+  --muted: rgba(242,233,221,0.60); --rule: rgba(242,233,221,0.15);
+  --rule-hi: rgba(242,233,221,0.32); --pink: #FF4C87;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 120px; }
+.mono { font-family: "DM Mono", ui-monospace, monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+.muted { color: var(--muted); }
+
+.mast { padding: 56px 0 0; display: flex; flex-direction: column; gap: 26px; }
+.mast-meta { display: flex; flex-wrap: wrap; gap: 10px 28px; color: var(--muted); }
+h1 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: clamp(44px, 8.6vw, 100px); line-height: 0.88; letter-spacing: -0.045em; margin: 0; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--pink); }
+.deck { font-size: 19px; line-height: 1.5; max-width: 60ch; color: var(--muted); margin: 0; }
+.stripe { display: flex; height: 10px; width: 100%; margin-top: 38px; }
+.stripe span:nth-child(1) { background: var(--pink); flex: 1.4; }
+.stripe span:nth-child(2) { background: var(--butter); flex: .9; }
+.stripe span:nth-child(3) { background: var(--oxblood); flex: 1.1; }
+.stripe span:nth-child(4) { background: var(--rose); flex: .8; }
+.stripe span:nth-child(5) { background: var(--taupe); flex: 1.3; }
+
+section { padding-top: 74px; }
+.sec-head { display: flex; align-items: baseline; gap: 18px; border-top: 1px solid var(--rule-hi); padding-top: 14px; margin-bottom: 30px; }
+.sec-head .num { color: var(--pink); }
+h2 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: clamp(26px, 3.4vw, 38px); line-height: 1; letter-spacing: -0.035em; margin: 0; }
+h3 { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 8px; }
+p { margin: 0 0 14px; max-width: 66ch; }
+p:last-child { margin-bottom: 0; }
+a { color: inherit; text-decoration-color: var(--pink); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; }
+.note { margin-top: 24px; padding: 16px 18px; background: var(--panel); border-left: 2px solid var(--pink); font-size: 15px; }
+.note.warn { border-left-color: var(--oxblood); }
+
+/* inventory */
+.inv { display: flex; flex-direction: column; }
+.folder { border-top: 1px solid var(--rule-hi); padding: 20px 0; display: grid; grid-template-columns: 210px 1fr 78px; gap: 26px; }
+.folder:last-child { border-bottom: 1px solid var(--rule-hi); }
+.folder h3 { margin: 0 0 4px; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 19px; letter-spacing: -0.025em; }
+.folder .path { font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
+.folder ul { margin: 0; padding-left: 17px; font-size: 14.5px; }
+.folder li { margin-bottom: 4px; }
+.folder li b { font-weight: 600; }
+.count { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.03em; text-align: right; font-variant-numeric: tabular-nums; color: var(--pink); line-height: 1; }
+.count small { display: block; font-family: "DM Mono", monospace; font-size: 9px; letter-spacing: 0.12em; color: var(--muted); font-weight: 400; margin-top: 5px; text-transform: uppercase; }
+
+/* case slate */
+.cases { display: flex; flex-direction: column; gap: 0; }
+.case { border-top: 1px solid var(--rule-hi); padding: 24px 0; display: grid; grid-template-columns: 30px 1fr 300px; gap: 24px; }
+.case:last-of-type { border-bottom: 1px solid var(--rule-hi); }
+.case .rank { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 22px; color: var(--pink); letter-spacing: -0.04em; }
+.case h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.03em; margin: 0 0 6px; }
+.case p { font-size: 14.5px; }
+.case .feeds { background: var(--panel); padding: 14px 16px; font-size: 13.5px; line-height: 1.5; }
+.case .feeds .mono { display: block; color: var(--pink); margin-bottom: 7px; font-size: 9.5px; }
+.badge { display: inline-block; font-family: "DM Mono", monospace; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; margin-left: 8px; vertical-align: 2px; }
+.badge.page { background: var(--pink); color: #fff; }
+.badge.tile { background: transparent; border: 1px solid var(--rule-hi); color: var(--muted); }
+
+/* numbers */
+.nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule-hi); border: 1px solid var(--rule-hi); }
+.num-cell { background: var(--paper); padding: 18px 16px; }
+.num-cell b { display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.035em; line-height: 1; font-variant-numeric: tabular-nums; }
+.num-cell span { display: block; font-size: 13px; color: var(--muted); margin-top: 7px; line-height: 1.35; }
+
+/* domains */
+.dom-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.dom-table th { text-align: left; font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 0 14px 10px 0; border-bottom: 1px solid var(--rule-hi); }
+.dom-table td { padding: 13px 14px 13px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.dom-table td:first-child { font-family: "DM Mono", monospace; font-size: 13px; letter-spacing: 0; text-transform: none; white-space: nowrap; }
+.dom-table td:nth-child(2) { white-space: nowrap; font-family: "DM Mono", monospace; font-size: 11px; color: var(--muted); }
+.dom-table tr.win td { background: color-mix(in srgb, var(--pink) 8%, transparent); }
+.dom-table tr.win td:first-child { font-weight: 500; color: var(--pink); }
+.dom-table tr.no td:first-child { text-decoration: line-through; color: var(--muted); }
+.chip { display: inline-block; font-family: "DM Mono", monospace; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; border: 1px solid var(--rule-hi); }
+.chip.free { border-color: var(--pink); color: var(--pink); }
+.table-scroll { overflow-x: auto; }
+
+.asks { display: flex; flex-direction: column; }
+.ask { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 30px 1fr; gap: 16px; }
+.ask:first-child { border-top: 1px solid var(--rule); }
+.ask .q { font-family: "DM Mono", monospace; font-size: 10px; color: var(--pink); padding-top: 4px; }
+.ask p { font-size: 14.5px; color: var(--muted); margin: 5px 0 0; }
+
+footer { margin-top: 74px; padding-top: 18px; border-top: 1px solid var(--rule-hi); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--muted); }
+
+@media (max-width: 880px) {
+  .folder, .case { grid-template-columns: 1fr; gap: 14px; }
+  .count { text-align: left; }
+  .nums { grid-template-columns: repeat(2, 1fr); }
+  section { padding-top: 54px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="mast-meta mono">
+      <span>Asset map 003</span>
+      <span>Drive fully read · 8 Sep</span>
+      <span>Direction A · Granny Square</span>
+    </div>
+    <h1>There's a<br>portfolio in<br>there<em>.</em></h1>
+    <p class="deck">I got into all four folders through Chrome instead of the Drive connector. The picture is much better than yesterday: a 30-page annual report, a full website redesign, and two conferences' worth of environmental branding. Here's what's there and what it builds.</p>
+    <div class="stripe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  </header>
+
+  <!-- 01 -->
+  <section>
+    <div class="sec-head"><span class="mono num">01</span><h2>What's actually in the Drive</h2></div>
+    <p style="margin-bottom:26px">The connector only indexes files that have been <em>opened</em>, which is why three folders looked empty. Reading them through the browser session gave the real contents.</p>
+    <div class="inv">
+
+      <div class="folder">
+        <div>
+          <h3>Event Branding</h3>
+          <span class="path">3 subfolders</span>
+        </div>
+        <div>
+          <ul>
+            <li><b>Wetech Conference 2023</b> — 15 photographs plus <span class="mono" style="font-size:11px;text-transform:none;letter-spacing:0">Wetech 2023.mp4</span>. Stage backdrop, branded step-and-repeat, a printed "Founders Wheel" game, roll-up banners, purple lanyards and medals, a yellow <em>Her Tech, Her Rules</em> backdrop, session slides on screen.</li>
+            <li><b>Wetech Conference 2024</b> — 18+ photographs (<span class="mono" style="font-size:11px;text-transform:none;letter-spacing:0">BODU*</span> and <span class="mono" style="font-size:11px;text-transform:none;letter-spacing:0">DSC_*</span>). A lime-green welcome archway, registration signage, a sponsor wall carrying Flutterwave / Renmoney / inDrive, QR wayfinding, stage lower-thirds, and a whole set of hand-held placards — <em>We Are The Way Forward</em>, <em>She Believed She Could</em>, <em>Dare to Lead</em>.</li>
+            <li><b>Book Launch</b> — <em>Becoming Exemplary Leaders</em>, 6 photographs plus a 240MB film.</li>
+          </ul>
+        </div>
+        <div class="count">39<small>files</small></div>
+      </div>
+
+      <div class="folder">
+        <div>
+          <h3>Presentation Decks &amp; Reports</h3>
+          <span class="path">6 PDFs</span>
+        </div>
+        <div>
+          <ul>
+            <li><b>Wetech Impact Report — 2025</b> — 30 pages. Cover, contents, co-founders' letter, a theory-of-change diagram, data pages with distribution charts, impact stories, partner pages. This is the single strongest artefact in the folder.</li>
+            <li><b>Wetech 2024 Impact Report</b> — the prior year's edition. Gives you a redesign comparison for free.</li>
+            <li><b>Sponsorship Deck 1</b> · <b>Impact Pamphlet</b> — the commercial side of the conference.</li>
+            <li><b>Verve Comic</b> — Interswitch. Image-only, no extractable text; it's an illustrated piece for the Verve card brand.</li>
+            <li><b>Brand Design Lunch and Learn</b> — she teaches brand design internally at Interswitch. That's a credibility line, not a case study.</li>
+          </ul>
+        </div>
+        <div class="count">6<small>files</small></div>
+      </div>
+
+      <div class="folder">
+        <div>
+          <h3>Website Design</h3>
+          <span class="path">4 PNGs · full-page comps</span>
+        </div>
+        <div>
+          <ul>
+            <li><b>Landing Page</b> — dark full-bleed hero, headline set <em>"Where Women In Tech Rise, Lead, &amp; Thrive."</em> with the last two clauses in canary yellow and violet. Partner strip (Flutterwave, Microsoft, Interswitch), a Who We Are panel, purple and lime programme cards, a six-figure stat band, a lime CTA block, dark footer. Page ground is a pale lime-cream, not white.</li>
+            <li><b>About</b> · <b>Programs</b> · <b>Media</b> — the rest of the redesign, same system.</li>
+          </ul>
+        </div>
+        <div class="count">4<small>files</small></div>
+      </div>
+
+      <div class="folder">
+        <div>
+          <h3>Flyers</h3>
+          <span class="path">6 images · read yesterday</span>
+        </div>
+        <div>
+          <ul>
+            <li><b>Interswitch</b> — Cybersecurity Month 2025 key visual, two Compliance Digests (October's myth-busting, December's gift-declaration comic written in pidgin), and the Interswitch Labs announcement.</li>
+            <li><b>Wetech</b> — Mentorship Program 2025 call for mentees, and a Community Writer editorial card.</li>
+          </ul>
+        </div>
+        <div class="count">6<small>files</small></div>
+      </div>
+
+    </div>
+    <div class="note"><strong>Nothing is missing any more.</strong> Yesterday's blocker is closed — the folders were never empty, the connector just couldn't see them.</div>
+  </section>
+
+  <!-- 02 -->
+  <section>
+    <div class="sec-head"><span class="mono num">02</span><h2>The case-study slate</h2></div>
+    <p style="margin-bottom:28px">Five, ranked by how much they can carry. Four earn their own page; the fifth is a tile that doesn't link out.</p>
+    <div class="cases">
+
+      <article class="case">
+        <span class="rank">01</span>
+        <div>
+          <h3>Wetech Conference <span class="badge page">Own page</span></h3>
+          <p>The lead case study, and it isn't close. Two years of the same event, so it tells a story of a system evolving rather than a one-off poster. Environmental graphics at real scale — an archway people walk through, a sponsor wall, wayfinding, stage design, and a placard set that turned attendees into the campaign. All of it photographed in situ, which is the thing most junior portfolios can't show.</p>
+          <p class="muted">Structure it as 2023 → 2024 so the reader sees the judgement, not just the artwork.</p>
+        </div>
+        <div class="feeds"><span class="mono">Fed by</span>33 conference photographs · 1 event film · sponsor deck · impact pamphlet</div>
+      </article>
+
+      <article class="case">
+        <span class="rank">02</span>
+        <div>
+          <h3>Wetech Impact Report 2025 <span class="badge page">Own page</span></h3>
+          <p>Thirty pages of editorial and information design — charts, a theory-of-change diagram, pull quotes, impact stories, a partner grid. Annual reports are how brand designers prove they can hold a system across long-form, and almost nobody at her career stage has one. Having the 2024 edition alongside it makes the case twice as strong.</p>
+          <p class="muted">Show spreads, not thumbnails. The grid and the data pages are the argument.</p>
+        </div>
+        <div class="feeds"><span class="mono">Fed by</span>Wetech Impact Report 2025 (30pp) · Wetech 2024 Impact Report</div>
+      </article>
+
+      <article class="case">
+        <span class="rank">03</span>
+        <div>
+          <h3>wetech.africa redesign <span class="badge page">Own page</span></h3>
+          <p>Four full-page comps of the site she led the redesign of. Directly backs the strongest line on her résumé, and it's the one piece that shows she thinks in screens and hierarchy rather than only in layouts. The partner strip carrying Microsoft and Interswitch does quiet credibility work.</p>
+          <p class="muted">These are tall PNGs — they need sectioning into scroll-length crops, not one shrunken full-page image.</p>
+        </div>
+        <div class="feeds"><span class="mono">Fed by</span>Landing Page · About · Programs · Media</div>
+      </article>
+
+      <article class="case">
+        <span class="rank">04</span>
+        <div>
+          <h3>Interswitch internal communications <span class="badge page">Own page</span></h3>
+          <p>The one that's interesting <em>because</em> the brief is boring. Compliance digests, a cybersecurity campaign, an innovation-lab announcement, a Verve comic — internal comms at a fintech, held to one voice. The December digest is written in Nigerian pidgin, which is a genuinely bold call for a regulatory piece and the detail I'd lead the page with.</p>
+          <p class="muted">Frame it as "making people read the thing nobody reads." That's a positioning statement, not a portfolio caption.</p>
+        </div>
+        <div class="feeds"><span class="mono">Fed by</span>4 Interswitch flyers · Verve Comic · Brand Design Lunch &amp; Learn (as a credit, not a slide)</div>
+      </article>
+
+      <article class="case">
+        <span class="rank">05</span>
+        <div>
+          <h3>Becoming Exemplary Leaders <span class="badge tile">Tile only</span></h3>
+          <p>Six photographs and a film from a book launch. Enough to prove range in event work, not enough to sustain a page next to the conference. It sits in the work grid as a non-linking tile with a caption — which is a legitimate move, not a shortfall, as long as it isn't dressed up as more.</p>
+        </div>
+        <div class="feeds"><span class="mono">Fed by</span>6 photographs · 1 film (240MB — needs a heavy re-encode)</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section>
+    <div class="sec-head"><span class="mono num">03</span><h2>Numbers, and whose they are</h2></div>
+    <p style="margin-bottom:24px">The impact report is full of figures. They are strong and they are <em>Wetech's</em>, not hers — and a hiring manager can tell the difference in about four seconds. So the page separates them explicitly. Hers first:</p>
+    <div class="nums" style="margin-bottom:26px">
+      <div class="num-cell"><b>1K → 5K</b><span>Instagram growth she drove at Wetech</span></div>
+      <div class="num-cell"><b>+80%</b><span>Engagement lift over the same period</span></div>
+      <div class="num-cell"><b>200+</b><span>Social assets designed</span></div>
+      <div class="num-cell"><b>30pp</b><span>Annual report, designed end to end</span></div>
+    </div>
+    <p style="margin-bottom:24px">And then the organisation's, credited as such — "the work I designed communicated this":</p>
+    <div class="nums">
+      <div class="num-cell"><b>₦6M</b><span>Awarded to women founders through PitchHer</span></div>
+      <div class="num-cell"><b>$500K+</b><span>Follow-on investment secured by past cohorts</span></div>
+      <div class="num-cell"><b>500</b><span>Scholarships across 22 countries</span></div>
+      <div class="num-cell"><b>290k+</b><span>Campaign reach in 2025</span></div>
+    </div>
+    <div class="note"><strong>Why the split matters:</strong> claiming ₦6M of founder funding as a design outcome is the fastest way to lose a reader's trust. Attributing it — "I designed the report and campaign system that carried these results" — is both true and more impressive, because it says she can operate at that altitude.</div>
+  </section>
+
+  <!-- 04 -->
+  <section>
+    <div class="sec-head"><span class="mono num">04</span><h2>Where Higgsfield earns its keep</h2></div>
+    <p style="margin-bottom:22px">Agreed on using it — with one line held firmly. Reframing, extending and cleaning work that exists is production. Generating work that doesn't exist is fabrication, and in a portfolio that's the one unrecoverable mistake. So:</p>
+    <div class="asks">
+      <div class="ask"><span class="q">Yes</span><div><h3>Outpainting conference photos to a consistent ratio</h3><p>33 photographs shot at mixed crops need to sit in one grid. Extending backgrounds to reach a common aspect is the single highest-value use here.</p></div></div>
+      <div class="ask"><span class="q">Yes</span><div><h3>Colour grading toward the palette</h3><p>A light, consistent grade so the photography sits against bone and oxblood without fighting Wetech's yellow. Grade, not recolour — her actual brand work keeps its actual colours.</p></div></div>
+      <div class="ask"><span class="q">Yes</span><div><h3>Cleanup and upscaling</h3><p>Removing a stray cable or a lanyard-clad stranger from the edge of a frame; upscaling the 500KB conference JPGs, which are small for full-bleed use.</p></div></div>
+      <div class="ask"><span class="q">Yes</span><div><h3>The 1:1 hero film</h3><p>Unchanged from the plan — motion transfer from your reference clip onto her portrait. Still needs the full-resolution original.</p></div></div>
+      <div class="ask" style="border-bottom:2px solid var(--oxblood)"><span class="q">No</span><div><h3>Inventing mockups, spreads or signage</h3><p>No generated posters, no fake billboard mockups, no invented report pages. If a case study looks thin, it gets fewer images — not synthetic ones. Everything she shows should be something she can talk through in an interview.</p></div></div>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section>
+    <div class="sec-head"><span class="mono num">05</span><h2>The domain, reworked</h2></div>
+    <p>The name change kills every surname domain, so <span class="mono">adenikeadedokun.com</span> is off the table — it would be wrong within a year or two, and a personal URL you have to abandon is worse than one you never had. And you're right about <span class="mono">.design</span>: it's cheap for twelve months and roughly three to four times a <span class="mono">.com</span> every year after. Confirm the exact figure at the registrar, but the shape of it is real, and it's a bad reason to be locked in.</p>
+    <p style="margin-bottom:22px">So the constraint set is: first name only, <span class="mono">.com</span> pricing, unambiguous when spoken aloud. All checked against WHOIS today.</p>
+    <div class="table-scroll">
+      <table class="dom-table">
+        <thead><tr><th>Domain</th><th>Status</th><th>How it reads</th></tr></thead>
+        <tbody>
+          <tr class="win">
+            <td>adenikeade.com</td>
+            <td><span class="chip free">Chosen</span></td>
+            <td><strong>Locked, 8 Sep.</strong> Holds on the constraint that actually matters: <em>Ade</em> sits inside <em>Adenike</em> itself, so it isn't carrying the surname and nothing breaks when Adedokun becomes Ayanrinde. .com pricing, and <span class="mono">hello@adenikeade.com</span> is the contact address on the site — the Gmail stops being the public route.</td>
+          </tr>
+          <tr>
+            <td>byadenike.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>What I'd argued for, and still worth $12 as a defensive registration pointing at the primary. Nine characters, reads as a credit line. Not the call that was made.</td>
+          </tr>
+          <tr>
+            <td>adenikea.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>Better than I gave it credit for yesterday. <strong>AdeA survives the name change</strong> — it's "Adenike A.", which is true for Adedokun and Ayanrinde both, so the monogram and the URL stay valid forever. The reading problem stands (most people land on <em>adenik-ea</em>), but at .com pricing it's worth owning either way, and it's the natural second choice if you want the URL to match the mark.</td>
+          </tr>
+          <tr>
+            <td>adenikedesign.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>The literal option. Says the profession, zero ambiguity, .com pricing — everything <span class="mono">adenike.design</span> offered without the renewal. Only downside is length: seventeen characters before the dot.</td>
+          </tr>
+          <tr>
+            <td>heyadenike.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>Warm and very easy to say. Slightly more personal-blog than brand-designer, but it's a real contender if she wants the site to feel like an introduction.</td>
+          </tr>
+          <tr>
+            <td>theadenike.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>Available. Reads as a handle rather than a studio. Fine as a defensive registration, not as the primary.</td>
+          </tr>
+          <tr>
+            <td>adenikestudio.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>Overclaims. She's an in-house brand designer, not a studio — the TLD would be writing a cheque the site doesn't cash yet. Worth revisiting if she ever goes independent.</td>
+          </tr>
+          <tr class="no">
+            <td>adenikeadedokun.com</td>
+            <td><span class="chip">Available</span></td>
+            <td>Ruled out by the name change. Don't buy it.</td>
+          </tr>
+          <tr>
+            <td>adenikeayanrinde.com</td>
+            <td><span class="chip free">Available</span></td>
+            <td>Free today. Worth quietly registering now so it's hers when the name changes — as a redirect, never as the primary, so the site's address never has to move.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><strong>Settled:</strong> <span class="mono">adenikeade.com</span> is canonical — canonical tag, sitemap, OG URLs and the email all point there and never move again. Two cheap follow-ons worth adding at the same registrar: <span class="mono">adenikea.com</span>, because it matches the AdeA mark, and <span class="mono">adenikeayanrinde.com</span>, so the new name is hers before anyone else notices it's free. Both as 301 redirects, never as alternate homes for the site.</div>
+  </section>
+
+  <!-- 06 -->
+  <section>
+    <div class="sec-head"><span class="mono num">06</span><h2>What's left before I build</h2></div>
+    <div class="asks">
+      <div class="ask"><span class="q">✓</span><div><h3>Domain — <span class="mono">adenikeade.com</span></h3><p>Locked 8 Sep. Register it, plus the two redirects above.</p></div></div>
+      <div class="ask"><span class="q">01</span><div><h3>Pick the mark</h3><p>Wordmark plus granny square is my recommendation from study 002. Nothing downstream depends on it until the nav gets built, so it can trail the first build by a day.</p></div></div>
+      <div class="ask" style="border-bottom:2px solid var(--pink)"><span class="q">02</span><div><h3>The assets, as a zip</h3><p>I can read the Drive but not bulk-download it — every file would have to pass through the conversation, and the book-launch film alone is 240MB. Right-click <em>Adenike Adedokun - Brand Design</em> in Drive → Download, and drop the zip in the project folder. Then I re-encode and resize everything to the performance budget locally.</p></div></div>
+      <div class="ask" style="border-bottom:2px solid var(--pink)"><span class="q">03</span><div><h3>The full-resolution portrait</h3><p>Still the one hard blocker on the hero film. Everything else in Phase 4 can start without it.</p></div></div>
+    </div>
+  </section>
+
+  <footer class="mono">
+    <span>Adenike Adedokun — Asset map 003</span>
+    <span>55 files inventoried · WHOIS checked 8 Sep 2026</span>
+  </footer>
+
+</div>

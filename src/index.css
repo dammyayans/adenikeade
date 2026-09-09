@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/* ─── Direction A · Granny Square ──────────────────────────────────────────
+   Palette sampled from the crochet cardigan in Adenike's portrait.
+   Section grounds follow the cardigan's stripe order.
+   ───────────────────────────────────────────────────────────────────────── */
+@theme {
+  --color-bone:    #EFE9DC;
+  --color-paper:   #F6F2E8;
+  --color-butter:  #F5E3AE;
+  --color-rose:    #F49CB8;
+  --color-pink:    #F0246F;
+  --color-oxblood: #5E0E1C;
+  --color-taupe:   #CBBBAE;
+  --color-ink:     #2A0A12;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    "DM Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --ease-spring:  cubic-bezier(0.16, 1, 0.3, 1);
+
+  --breakpoint-md: 810px;
+  --breakpoint-desktop: 1200px;
+}
+
+:root {
+  --dur-fast: 200ms;
+  --dur-base: 400ms;
+  --dur-reveal: 900ms;
+  --dur-ground: 1200ms;
+
+  /* Live section ground — crossfaded on scroll. This is the hook. */
+  --ground: var(--color-bone);
+  --on-ground: var(--color-ink);
+
+  --container: 1340px;
+  --gutter: 18px;
+}
+@media (min-width: 810px) { :root { --gutter: 15px; } }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--on-ground);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color var(--dur-ground) var(--ease-spring),
+              color var(--dur-ground) var(--ease-spring);
+}
+
+/* Micro-labels: 10–12px, uppercase, tracked. Nothing sits between 16 and 80. */
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Captions are read as sentences — mono for texture, never uppercased. */
+.caption {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+/* Display type: heavy negative tracking, leading below 100%. */
+.display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-pink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Fill-up hover, never a colour swap. */
+.btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 12px 22px;
+  transition: color var(--dur-base) var(--ease-spring);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-pink);
+  transform: translateY(101%);
+  transition: transform var(--dur-base) var(--ease-spring);
+}
+.btn:hover { color: #fff; }
+.btn:hover::before { transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Motion layer ─────────────────────────────────────────────────────────
+   Three devices only: ground crossfade (the hook), cursor-follow label,
+   staggered entrance. Everything here is disabled under reduced-motion by the
+   global override above.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(72px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero entrance: nothing arrives at the same time. Delay is per-element. */
+.js .enter {
+  animation: reveal-up 0.9s var(--ease-spring) both;
+  animation-delay: var(--d, 0s);
+}
+
+/* Scroll reveals. `reveal-out` is the resting state before the observer fires;
+   it never parks content permanently invisible because the observer sets
+   `shown` immediately under reduced-motion. */
+.js .reveal-out { opacity: 0; transform: translateY(48px); }
+.reveal-in {
+  animation: reveal-up 0.8s var(--ease-spring) both;
+  animation-delay: var(--d, 0s);
+}
+
+/* Pulsing availability dot. */
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-pink);
+  animation: pulse 1.8s var(--ease-spring) infinite;
+}
+@keyframes pulse {
+  0%   { transform: scale(1);    box-shadow: 0 0 0 0 rgb(240 36 111 / 0.55); }
+  70%  { transform: scale(1.18); box-shadow: 0 0 0 9px rgb(240 36 111 / 0); }
+  100% { transform: scale(1);    box-shadow: 0 0 0 0 rgb(240 36 111 / 0); }
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 12px 18px;
+  background: var(--color-ink);
+  color: var(--color-bone);
+}
+.skip-link:focus { left: 8px; top: 8px; }
+
+a { color: inherit; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal-out { opacity: 1; transform: none; }
+}

@@ -1,0 +1,519 @@
+{
+  "powershift": [
+    {
+      "slug": "power-shift-kv",
+      "source": "Frame 2019.png",
+      "width": 4320,
+      "height": 5400,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAABQBQCdASoUABkAPxF8tVOsJ6UiqAqpgCIJYwDN/ywTooX+s/PyZWwqDQuiUP9T0CPAswAA/u6SObK4FZO9aE0LzUT/tiekyaGCUgSY4zX36TvEsS5jfb/ivilyOi9ulvSkD3zeb+umKVSJU5524SgR0CX4K2M1f0DP2c7Bue+61nHiRRnxsHMpnvD+bC3QmAAxGvYVXc4bt4UCulF6mer6mqrmilKEJBpmqeQwgcRuWZY5oLcEMOg9COkfR6JkQA7dwAAA"
+    },
+    {
+      "slug": "power-shift-route-chrome",
+      "source": "Power Shift 1.png",
+      "width": 1620,
+      "height": 2025,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBQCdASoUABkAPxF6sFMsJ6QiqA1RgCIJQBjmAkay6sfoXx7QVvhX/IGjSiYqQNNQsAAA/ulKOgfxZJJl1cRab7hC9vQzDlL6FS604jWxq4K4Y554Vcrbgq1ytxz3kgPOY+GeY0P3tu4fIh6Q0eJQkd9hrvwxtY79UqqNC7hG2rDR/u2m4qG2Ru+JNk4g19fAvQbdY6fBb65g6XhTATZq7jT8n4f2bIbwBN6uoSNhJg+HKkRr5J6dl5QyatUsAAA="
+    },
+    {
+      "slug": "power-shift-route-violet",
+      "source": "Power Shift 2.png",
+      "width": 1620,
+      "height": 2025,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBQCdASoUABkAPxGAuFWsKCUjKAgBgCIJYgDE2BBZhubg4kNNvt237osH5qb9e62IAAD+y/ecXDaM6QyY1EbjFS/8k23L4q1GclawbFOeswWOFjjdMtAhKDVxK0uEcWxdlJ2XtzyABA5dcGu3A7CeWPDW2R8fmEVYxrKxfbMSQ7wJwZ8MlHmiUW8Wf8wFB7yGxNoIha61cAwA5YKcWu5eAAA="
+    },
+    {
+      "slug": "power-shift-route-lime",
+      "source": "Power Shift 3.png",
+      "width": 1620,
+      "height": 2025,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBACdASoUABkAPxGAuFWsJ6UjKAgBgCIJZADNwAT8IHszBneS/6uncmwwIwgAAP7cvIbEBru5hp7OKlERg7UGCrITRsUiqQRZx42NaOeWbGMZwTjhvIjFb/2V/YCg1s8cG/jITyLsWYR18iRHcYxFqRLhYlPH0opMIj0iaIu8Tj/+GsRL4+0v7Bbj6i/H2lqh8kz7D1H/wfKCT4JVk+uvNGMKgmZqKxvxoPfXZbiPAo7Bb9tAAAAA"
+    },
+    {
+      "slug": "power-shift-speaker-card",
+      "source": "Frame 1946.png",
+      "width": 4320,
+      "height": 5400,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoUABkAPxFws1MsJaSisBgIAYAiCUAZQAI/tRPfBnOQx56rWHOYil+isbT9wAD+0fgzuQ69ikI1OR1gyfCnx6NFwOaE+v1eKCQx1UR+fWCWPY91zVO+an+gHxyBbfU2V5h+WpOA7+b0BThwEM6wd+yzL/ILurEAhOZBUXcKYg5O5NFU1q0cHE0t+w5c8xH225Kv33r3cUuNBmf6VjaEkj0Fv/tRpq63Z9grU0hZc5CJ9Oa4AAA="
+    }
+  ],
+  "conference": [
+    {
+      "slug": "conf24-welcome-archway",
+      "source": "BODU5644.jpg",
+      "width": 5472,
+      "height": 3648,
+      "ratio": 1.5,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoUAA0APxFysFAsJqSisAgBgCIJZgCdAB9FZv3eSDhdGn7QAP1SiadXQRcj/99+R+7YGu/RzVIFxlYCJoW1KGaffFf93vzh2aa/41FlZC2dmjINkJjGv7XRxEdrnfa3Kx+lOWdx2G3mpY6bNlx2FItU+/R6byt/VMzpGDQA"
+    },
+    {
+      "slug": "conf24-registration",
+      "source": "BODU5179.jpg",
+      "width": 4700,
+      "height": 3133,
+      "ratio": 1.5002,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoUAA0APxFysFAsJqSisAgBgCIJZAC22fqgO7PD9tXKBw5cgogA/rHQ7/sQSheT0IvlmwLXI6BPzo8n+7w+XjaIonEvPUDwC0L5gkm/NFOrf3BrdlbrN1JURxanIEHbDSVLxnhfzc39vdUuWeCglp9m19dIAs/2+SJX8g40Lzh/hB6pGpPwEpoFrWAAAA=="
+    },
+    {
+      "slug": "conf24-way-forward",
+      "source": "BODU5706.jpg",
+      "width": 5170,
+      "height": 3447,
+      "ratio": 1.4999,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoUAA0APxFysFAsJqSisAgBgCIJYgCdAB9ETtTKUdA95+IA4m0FP3Jw/pw0Ni5/MfHdesGpOR7WH7db+bgsCOsNnzupOOYH9EDx1oms5m/u1QFjhM7fCPYE6IjqcPRG+RG/nkVAAAA="
+    },
+    {
+      "slug": "conf24-photo-panels",
+      "source": "BODU5691.jpg",
+      "width": 4930,
+      "height": 3287,
+      "ratio": 1.4998,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoUAA0APxFysFAsJqSisAgBgCIJYgCw/f/gPGGVioLZnemXCAAA9r21wRW0F4aI+iAmJIpTTcuRXUrHQ4d4yl5t4Fj6ol1gK5RIIkb8hLelHZRsnHXGdBOU8pbzW3dzCzbGl/msqHizRb+Roz1QhnYL9QcAAA=="
+    },
+    {
+      "slug": "conf24-placards",
+      "source": "BODU5058.jpg",
+      "width": 5216,
+      "height": 3477,
+      "ratio": 1.5001,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACQAwCdASoUAA0APxFysFAsJqSisAgBgCIJbADE2A1UbBjzP/kAAP6i9F+HFOBHJAYY+plFGxQXb72BEvV/y7n4tdjTaR2fG/owBqd4+HUDDA84ee3b4/2O2iqtdv3USyX+AQiT5r7OSaeB6wauvr37iKuPoK64yKr0XzoV1X5rw9WOYZLbbMWdxAAAAA=="
+    },
+    {
+      "slug": "conf24-sponsor-wall",
+      "source": "BODU5098.jpg",
+      "width": 5219,
+      "height": 3479,
+      "ratio": 1.5001,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQAwCdASoUAA0APxFysFAsJqSisAgBgCIJQAAKQNXB8aaoFqrAAP7EAeBCAdT97q8/JxyJAtRAALNV+2UwFJurLmCcHFetSlGn0CIcXVmXu80Wh753z8S3nmZbC+ggKRMooEJszUdVPxcDMtSFYSW2iIb2oAomCsJsiGtwXrdYAA=="
+    },
+    {
+      "slug": "conf24-main-stage",
+      "source": "DSC_1408.jpg",
+      "width": 5430,
+      "height": 3625,
+      "ratio": 1.4979,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAA0APxFysFAsJqSisAgBgCIJZQCsAB4JyYyZ289QJ5AA/u6gylShfeV1Pq8OhBklYGt5k0EKkdoLWEDDbUwfHzEKf/yo4DVXw2nZ/pIgEs6GPrvSXRWEdcAAAA=="
+    }
+  ],
+  "conference23": [
+    {
+      "slug": "conf23-her-tech-backdrop",
+      "source": "Wetech 34.jpg",
+      "width": 5405,
+      "height": 3604,
+      "ratio": 1.4997,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoUAA0APxFysFAsJqSisAgBgCIJbACdMoADAWnvP9Dl0GwOSAD+ZnePf0P643LdXLqPTBtteEPzdpKeWlP3z598GDfz8ijc/TR2iIQAQwTFk+LeSpiOIENzwYrFAaGqt7+pQeSPGByh+ZPkiAAAAA=="
+    },
+    {
+      "slug": "conf23-founders-wheel",
+      "source": "Wetech 21.jpg",
+      "width": 5359,
+      "height": 3573,
+      "ratio": 1.4999,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoUAA0APxFysFAsJqSisAgBgCIJZgC06BjbheE+9xWjaaKAAP5U+aMuhMR24Hyax2nKqZ3sGb+89CISkcMY2KkXJBc9rVt7x6z0aKehpBd4bymAfSRsFUdi2NoiPwwE+PGlPd+t8P8fMRo5E70kAA=="
+    },
+    {
+      "slug": "conf23-lanyards",
+      "source": "Wetech 20.jpg",
+      "width": 5359,
+      "height": 3573,
+      "ratio": 1.4999,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoUAA0APxFysFAsJqSisAgBgCIJQBYdg6cn6okRTM/a08YeAAD8Zj2fbmM3sfm2fUoFUq/lYy+1opQoQYxliiEhsmNWUEYWvd8WRWKQXKftsMHjDPBqNPnUAAA="
+    },
+    {
+      "slug": "conf23-founders-stage",
+      "source": "Wetech 169.jpg",
+      "width": 5593,
+      "height": 3729,
+      "ratio": 1.4999,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoUAA0APxFysFAsJqSisAgBgCIJbACdEf/gPiZemwFTv1Qz+AD+kK1IAZUWzDLZ4ElCb7cn4zxCqqY3RyUB6aDWj6vbWVPBs+GPp2vN9haMPh1qjvpCuoVBDxePKU0Lqv5vYGjdYP5RMNDPo1dQFyK8/CV4hEDLjHf4Ho64x3+DaojUXFP3UAAA"
+    },
+    {
+      "slug": "conf23-main-banner",
+      "source": "Wetech 183.jpg",
+      "width": 5359,
+      "height": 3573,
+      "ratio": 1.4999,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoUAA0APxFwsFAsJiSisAgBgCIJagCdFQAAcV/jUWJLZ/AA/GeNpiS6aWDZFEwpmLmnT6jCXr1pi7ZKG1CCeLsa5rVS4TCcp/WXeD74/HlXNUOxUhn/kzA27Wtjq8WLnOHZoMut+OPPTzHKHhgkYYpBLXC1hoNWKrXQm/uyqcua2kRwAAA="
+    },
+    {
+      "slug": "conf23-session-screens",
+      "source": "Wetech 216.jpg",
+      "width": 5760,
+      "height": 3840,
+      "ratio": 1.5,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoUAA0APxFysFAsJqSisAgBgCIJZACdABipLDtw+MWwKYAA/pbUWE24esWSL3vy6WCBO9dFUWbYsZWmiN+xM3Iocu/1USUrSJqKhKisNOAqGuq6bViQM7aPW5KHHB+ap5iaFaFi3RtvhvxeWLKtEGKezh9EkqV+WtcQRngA"
+    }
+  ],
+  "website": [
+    {
+      "slug": "web-landing",
+      "source": "Landing Page.png",
+      "width": 1668,
+      "height": 6695,
+      "ratio": 0.2491,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRuYBAABXRUJQVlA4INoBAAAQCQCdASoUAFAAPxF2tFOsJqSirNgJWYAiCWoAwOD29Z+vl8v3f+9uA+0tlJvIw9utH3HfAoGMm/i4pIVizQqiGU+md1yj3VvmbYSzfenfOgAA+XbSDITOkrkK6Yaj9U1nsAu7wHlaLXuezMVnlu6+H6CqSYauVdvOF8OCRDZeT5EL1DpXMpU3ZqbpLKeOSugzVPrbpuq0vmOItn3xMejvxZkbB8IiUQZa09wOlogCgwW7MOHtw/qrYDTS7f78VI9hU6zxr/SSHX/NwWMJBnKAt5OIL23a/1iR4317dYisEdhBT8cePsqLQ77BomxqZlhJZ6eZK5Ld5jLzHqlEp9nOksxQizOGg5vYSKtC8bRv1bAU3KqGznvwCiRxvfBX+wN/pfx418jT7NDP9OMKz5o2HpFvrQt8elUAB6p+3n3o+vg80JB0O9LA3vfS/M0J3g/L01eIjJTV9Xv6RsdCD3GLptg13uc1QmBeWwU+z6726wqgG/kzDlZ/6ZE9+dMFNUeWHCWwKXnRRYw6Slc5S4eHbokbxd1x83E32jk8VA8Ua4ofTUFe9yugr+fFeY5v+b4fpaqj+BSW5TyOChx/wj2TuC7Y1Ahy2oP9or1jjXf+ZP9q4ZrX+cIN3AA="
+    },
+    {
+      "slug": "web-about",
+      "source": "About.png",
+      "width": 1668,
+      "height": 5011,
+      "ratio": 0.3329,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRkgBAABXRUJQVlA4IDwBAACQBwCdASoUADwAPxF8tlYsJySjqBgJWYAiCUAZJi8EGOPoQd2yXjBn++JfPCIUVJYDuy4PvQxVuDa+2eUMgzR8juHUp6AA/vNrOkY4zbsUhhbN7LOlPrTs5+twuSv2bvLLSYPAm8J7kAV3ZKADTYyaVzbdM5ZRr7HOGzl4opaU1Ld9tIbLJCbJKOdIysHWQ4CrKpEBU6W1LOCrtz9hn26w6uU854tJclwIYCTuxNTSsXbb8sGkWSZJMhQpH1uyeecDSz/sW0sUS5OeclachebiVEghWAs9aJokpT/KEkGlIBQdOJ8oPPuLZgVtcjqhVnbTTuRmxzLY0lxVxxAYYhMQemwiTLkAAHZbOuTZ4DAkoHkvGKbFaZ+E2Vo1tDG3BtFYYgsrAr7zhaC506eVoFimA3N91mjPTTUVAAAA"
+    },
+    {
+      "slug": "web-programs",
+      "source": "Programs.png",
+      "width": 1668,
+      "height": 5754,
+      "ratio": 0.2899,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRjgBAABXRUJQVlA4ICwBAADwBwCdASoUAEUAPxF6rVKsJ6OirNgMAYAiCWIA0Bt+9fQsB/3zr3DvRBr5qimpojzIF7pCqn3c9bIEOydsmT/NLIi/yqJLwYgA/u/RSr/zNZdhho8Bvff1XC5rbR+X4Z0uFvTpUG6yuPGoGijWV/vh+HMfz+V9q7ZVqB7c6cfTISwj6RNla8Y1lf3zFd55/n44zfWPo3PCt7Vxb0CLwgF+U3mlYAbYJFzN+NublIN82Zbr8/P8rLNuMVVFrEthhUPCz9E8yalpAvTHRjzvimIcP1j1sZTG4Bd9o48uq+B2RnYEIC66IsQXbLaJZwToauc7l1+JXPU3fGwEnYYQ3mv5ANwZpn7Vi6xjy2z+X/Q9O65PrnVhe33wBlayGyb4/L4PbqX6WFD1Q8tupAA="
+    },
+    {
+      "slug": "web-media",
+      "source": "Media.png",
+      "width": 1668,
+      "height": 3498,
+      "ratio": 0.4768,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAABQBQCdASoUACoAPxF6tFOsJySiqqgBgCIJYgC06BZJyiYwB1ID2zbYGem2Oy5c+YOczAAA/uqE455FG9C5K/bVgarjsmTw0TGkCv+Lxwn19EuELfMPN1ThArhak0u/OUPN0+1IuyjbnxTjwtUPdh8rEuQKAroC693AD/47F1Xh0lbefsdyNlZjoe3VogSuAliy/4NZvgL6Eaa161+LWS3qANBQRO+q6xAFfhWU2Bmd4QHt6nJf3k9v+mo3jgSBvfk+1p65eOOqmOyoH540VvRy4DV0e56GmCcGPDYyR6DJ9M1HAAA="
+    }
+  ],
+  "interswitch": [
+    {
+      "slug": "isw-cybersecurity-kv",
+      "source": "Cybersecurity Month KV.jpg",
+      "width": 3241,
+      "height": 3871,
+      "ratio": 0.8373,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASoUABgAPxF6r1MsJ6OkKA1RgCIJbACdMtB7KBFa1QxBjvVS8QDBTw2gtAAA/uy+/LrSjnfixU4BDW2t/L04IGneVTg4XQv8phSBkCuXQ2Aj11NVfKJGLzXggSFQGPC+Iz3qC5KJy5wpTDjYLDIJk2PisqAFuRp7fKQQCwAA"
+    },
+    {
+      "slug": "isw-demo-day-a",
+      "source": "ISW Project Demo.png",
+      "width": 2480,
+      "height": 2972,
+      "ratio": 0.8345,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoUABgAPxF0sFAsJySisAgBgCIJaAC7L8CB1Xn84Obs/QBzrFjPgAD+6fXNu/HH8zfBntCshaHRI9tAAb9DOjm1oRtekukEbjMJBv/5FpZGvO0tHySLS78uPUG0F8ZCKACFxHEya+XT6bgAaSveSZGDMoo8Zswt/2uxCAAA"
+    },
+    {
+      "slug": "isw-demo-day-b",
+      "source": "ISW Demo Day 3.png",
+      "width": 2480,
+      "height": 3256,
+      "ratio": 0.7617,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBACdASoUABoAPxF0rVCsJqQisBgMAYAiCUAWnQHhU+u2DYeWtYZKz2yAAAD+7qFYFT5Fo8wdnxfxFLCz8wkdAPQeCXwdVvJcBCRYUfz+aRSoj/IiRqTp1PYUYRlTafLvcGwzBO4NUIX8wCMVjY7x2ZZeAAAA"
+    },
+    {
+      "slug": "isw-labs-enter",
+      "source": "Enter our Interswitch Labs.jpg",
+      "width": 1787,
+      "height": 2405,
+      "ratio": 0.743,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBQCdASoUABsAPxF0r1AsJyQisAgBgCIJbADCr5CkGD/Z/8CgZ/23//9Fb/Lr69rAAP7vCQ1E1FajqCj/bvhomY1YKyrb8E7Ot0qUSOeDZwoC0BXRnFmqBLjwBtcyt9MVFVyK0PSkBKue1sEhw2KcceoYiuWp7vsexUM6VXzkallHt0ADaiX5jsUOW07olDgbUpSwzjZcKZeooBXFaJZNO1VIAAAA"
+    },
+    {
+      "slug": "isw-labs-welcome",
+      "source": "Welcome to Interswitch Labs.jpg",
+      "width": 1786,
+      "height": 2139,
+      "ratio": 0.835,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwBACdASoUABgAPxF4sVIsJySiqA1RgCIJZACdMswBqZ1Te1+Ms7oVYpaDz+GvuAAA/ulIrJgQuiBwnbQJS9wc5/0Z9MU67KdqmJso03li3P1YTygMYA6vJo+QTM8ACzwDInydcRqpjpAhQ3HMdEVHPjH+v5RbO4ydisT3+KeyqwYe6X9QrvdtH3BJvQnw8Vlss4tQQAA="
+    },
+    {
+      "slug": "isw-ember-season",
+      "source": "Staying Vigilant this Ember Season.jpg",
+      "width": 2480,
+      "height": 4086,
+      "ratio": 0.607,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBQCdASoUACEAPxGAuFYsJ6UjpWmZgCIJQBkagW1IHbPwDNWYF9y42z3+0734wm4rIAD+6fXLslwAaYUSRZk7x0An3gy1O+hXI0kMnn9ojZbVTwOO7TmC0b4Ag42xzTAheSrc+H79nxWs08uEFFc6t/AAAA=="
+    },
+    {
+      "slug": "isw-teamwork",
+      "source": "Teamwork makes the mission secure.jpg",
+      "width": 2480,
+      "height": 3094,
+      "ratio": 0.8016,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoUABkAPxF8tFOsJ6SiqAqpgCIJQBig4AAdsnr6iz9Q0CDJsgD92pOfEAM5hLvmUcELdqr45mS38GI91MFz/2/WirGEI5x8fkKT7kwoG0KSDBbtnlyTTQUi9ttNyuTAAAA="
+    },
+    {
+      "slug": "isw-digest-december",
+      "source": "Compliance Digest - December 2.jpg",
+      "width": 2480,
+      "height": 3965,
+      "ratio": 0.6255,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACQBQCdASoUACAAPxF0s1KsJiSisBgIAYAiCWwArDMYBStJ8x+90KG/BsX85SEAgPQteoHwIAD+8XQz2o6N+yEV1sriXo8bvyBItUQH9OXQdr29/VG2q5vOSHh8YvdvKVaXTmJOqMLQn4bjaLYAgVW9U8oeiFOoTZpXj1z1gmrO3F0+379H7YodgEQU4oji55LFcWToJcnyNuveoVbiUo1HgV0UjOLY+E57ik6wAHMAALGk+QU1SaHnRFmK9cqTGQHRYyO96MoZQJF7YAAAAA=="
+    },
+    {
+      "slug": "isw-digest-october",
+      "source": "Compliance Digest - October.jpg",
+      "width": 2480,
+      "height": 4789,
+      "ratio": 0.5179,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADQBQCdASoUACcAPxF4s1KsJySiqqoBgCIJQBlAAs5mW7q8tu3tI3H5bd6RJQqbfLTCVG9oh7XAAP6zsGOChyjfBwytYA79pJbHpGHThepynL0jaCaHG8YsLp+UITTQO/a6rdqT4ngyps1XTBFHDsgnQVblu+9VjkEwvH2Y8wSpuOFvgD/teNXbHMTVuNiFDuCnddm4PC8dy8TaXnXrW94DAIX9dRaMpVrEx3xl1o1krAw6LNkQAAAA"
+    }
+  ],
+  "campaign": [
+    {
+      "slug": "wt-editorial-ecosystem",
+      "source": "CW 1.png",
+      "width": 1080,
+      "height": 1350,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800
+      ],
+      "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQBACdASoUABkAPxF6s1QsJ6QjKAqpgCIJaQAAL3Nvh5olbr9AeI9+R1kqQAAA/uzaXnOUpUVMbKJE+6aVRKOmtjvJjvcZ9zKKLZUJnE1nYKIpxd71cLMPl4qZbaHNzspPRT38S6S5DvEklLEoD1WMAAA="
+    },
+    {
+      "slug": "wt-editorial-motherhood",
+      "source": "MA 1.png",
+      "width": 1080,
+      "height": 1350,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800
+      ],
+      "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwBQCdASoUABkAPxF0sFAsJySisBgMAYAiCWkAAC6K6yqmFSH7l+/1JNvXeopqd+/94AD+7NlFv/LlSoqnCFLFU4QcBPxq8QAA8tWJMrHxIGI2Jw4LHujA/g/5HeseJENJwq5epWCMyJZYWjhKE5fSgo2J0U+4AAA="
+    },
+    {
+      "slug": "wt-editorial-power",
+      "source": "Community writer.png",
+      "width": 2160,
+      "height": 2700,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBQCdASoUABkAPxGAuFWsKCUjKAgBgCIJYwDOaoABtTRAey71g/oqWGK18g0KppdmSoAA/uzbbpozHeyBnDRgmq/8jU5GAhf31zs9QndOTyYhGQdMCJ71ZcnWu5OZhDwDSHOqiRksVrB0YtovOW4VxpiTQn7ZOcDaYJuy+X5VuEQ0nDNA+Vs6+4GM1ePDO/AVfrl9aq4vsiw4AAA="
+    },
+    {
+      "slug": "wt-mentees",
+      "source": "Call for Mentees.png",
+      "width": 4320,
+      "height": 5400,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBQCdASoUABkAPxF4sFKsJyQiqA1RgCIJYgDDNBElqZ00bAFnXYsiMSLVnXQ6zAiB/vQA/ud784EA4l/st8DgHOlru59Ur7Sjr2Xt1Le792PbtXnPPQnZFog1QkYcuFNpkMZTnWt3Rges5aW74fnJq07l5fSJ9Kp3YI68cx7eNg+zl3akzt5vQMF1CSHzXKXcFZWUHP1TYLvova8J63jnfhH0AkxsZ2X9AUS8YBOx6S0IWWvQmRBZgEw2UvFJAAA="
+    },
+    {
+      "slug": "wt-mentors",
+      "source": "Call for Mentors.png",
+      "width": 4320,
+      "height": 5400,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACQBQCdASoUABkAPxF+tlWsJ6SjKAgBgCIJQBjV0GdEz/gHlpSvDZUE8Txrpy1Ex5Tjy4D/AAD+53vzgOKq79jaADXyNUY3be/0eaSSWfxYDsipBdkMb6AADMfZu9FMTw1lcGViZUKD1Lgizzghh8XVTU4ux2FfAM8CzuBpInNya9H9dbKWnBdaqkIGn99cAB8BFg1g5dayFEuOIbJRifla+W9hKlgWJR9G1oXLlOZgYi+ajQAAAA=="
+    },
+    {
+      "slug": "wt-townhall",
+      "source": "TH 2.png",
+      "width": 2160,
+      "height": 2700,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAQBQCdASoUABkAPxGAt1WsJ6UjKAgBgCIJZADE2YtebysUNj6EVE5r3+fa0B86GfrkAP7gqQh5sPp7X+xIzQEpd0mTn3G3dNcnhkBFn7XNW/Y45wnJUsY7bBcVv1m3AlDC4eYSGmx6tfG14K7IR7ewNiSyNae3r74RjJnOGnqEYfELa+Yl60Od/Pp75i9mpV/10FDNekVqJcDamalZrs//zpjmM0HUdIo4gAPvWrAVCf2pb+byZ3EoV3wEddFKZsAAAA=="
+    }
+  ]
+}

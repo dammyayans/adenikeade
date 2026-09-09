@@ -1,0 +1,82 @@
+{
+  "report": [
+    {
+      "slug": "report-cover",
+      "page": 1,
+      "width": 1549,
+      "height": 2190,
+      "ratio": 0.7073,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAABQBQCdASoUABwAPxF0sFAsJySisAgBgCIJYgDGfBuj7Zp9UziPLUZA+ZUpSQz9Hle9K7AA/upGl/XUOWN01Dw9Z6r+wOWb6MEWT9NozYII/FFUJxa0LJXGtzDAkKZT1d04Ga8saERLgIP6tD8/9aZ+zSkTM6Tw7XKi0F2oN5B3Hru7UY4TTOV9EMzAGp4IyhimOR+85d1Jb2zVYze4Uy0nFBmLFw+J41nYfiLM/N+OLGB7PfmbqG+mtCrcJMaTbZD6lImsKgtehjgA"
+    },
+    {
+      "slug": "report-founders-letter",
+      "page": 5,
+      "width": 1549,
+      "height": 2190,
+      "ratio": 0.7073,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoUABwAPxF8tVOsJ6UiqAqpgCIJZADNwApoWFK2x+D6pgmMZXxsAP5vxQwQIi6U0EVQucewe6nv7rVaVooi6AEHpcOAHDxJWG+Ya1tyPlfoexnHcb52AZ2qfMxudsjCFIhdVZ2Y6Th/OGcNNE5P1Ho3RJTlIwxMQptTiRDRYZQQ0U0AAAA="
+    },
+    {
+      "slug": "report-theory-of-change",
+      "page": 7,
+      "width": 1549,
+      "height": 2190,
+      "ratio": 0.7073,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADwBACdASoUABwAPxF8slGsKCSisBgIAYAiCWMAxvQ0ZR+ZkSlxtg0ufYDmSc/k1mAA/tIETFH+hzFZ5K2XWmzz9VGbp8WqYqIsSCKjywSvUtia6wov5NkwwrPyy0/Le9BmHIImhlxagL8IrxsAtHRDY6wc5yAaKR/hqjOmPDFkM7j1MiYHMWvif8wLChemtOTEedbVorberGe01DXpBVlUWL/RyAFmGD5ZFyyJTVi+VZuAAAA="
+    },
+    {
+      "slug": "report-reach-data",
+      "page": 9,
+      "width": 1549,
+      "height": 2190,
+      "ratio": 0.7073,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwBACdASoUABwAPxF6uFMsJ6WiqAqpgCIJYwAALo29oUcsXZiuRiFznsK0eI4AAP7vYytbbXyb/DDSX6V2ufuGsKQhHn+ZOEY1b04p0QNRABSMurNRLV0Hvd4+PffoyxHed8kc7zP3ns00Y5ZOLFNWUtrOn8dGxNzVxd9tv46JYiqLlAxLF6+TRq7RVmdX+lef9wlPlZNGIE38xRmAAA=="
+    },
+    {
+      "slug": "report-impact-signals",
+      "page": 16,
+      "width": 1549,
+      "height": 2190,
+      "ratio": 0.7073,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoUABwAPwForFArJiQit/qoAWAgCUAZ3YRR/G3jB+t0DpR5D4TbLAsL6wAA/u3Xs0eIC2N1j5wATDpQPXR/VqVY0S5eXD3TZb/fE74dL3SXcjs5oH87purus2jkl65Wm+Da/AwOPmcg2ETRqZga7HeF9FX5D3rnsMk5t44wvslqh461PAxWn2DKsA1jug6r9qhRP2M9EznTdgVhlldpIIrsWCOJWW64gAA="
+    },
+    {
+      "slug": "report-celebrateher",
+      "page": 26,
+      "width": 1549,
+      "height": 2190,
+      "ratio": 0.7073,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAAAQBQCdASoUABwAPxF6uFMsJ6WiqAqpgCIJbADLLDTw7l5KNYmnNBjKLRVH39tr/JAAAP7qWC0babTtmEidroe/8KKwyQHXS9N17LtXgjZhvLfJS/JK7P8CzjfsA0Qv/FTcw2qKWy1tHKj/TDh/x2nYK2IXUuVb/Lax6LCdIQa5E8h2BZN+H85J+yfN/Ycn2tslPKJfAGrbSYYFIMIZAgYqDnILPkP+go/xj55EC2KD+tR7s/p56SiVJINFTzozAAA="
+    }
+  ]
+}
