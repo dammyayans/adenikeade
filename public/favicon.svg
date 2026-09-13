@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <title>Adenike Adedokun</title>
+  <rect width="100" height="100" fill="#EFE9DC"/>
+  <g fill="none" stroke-linejoin="miter">
+    <path d="M50 8 L92 50 L50 92 L8 50 Z"     stroke="#F0246F" stroke-width="11"/>
+    <path d="M50 27 L73 50 L50 73 L27 50 Z"   stroke="#2A0A12" stroke-width="10"/>
+  </g>
+  <path d="M50 39 L61 50 L50 61 L39 50 Z" fill="#F0246F"/>
+</svg>

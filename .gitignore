@@ -14,10 +14,6 @@ raw/
 *.zip
 portrait.png
 
-# Intermediate written by scripts/build-video.mjs; the site serves
-# poster.avif/webp/jpg instead, never the 6MB PNG.
-public/media/hero/poster.png
-
 # Local
 .DS_Store
 *.local

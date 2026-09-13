@@ -1,0 +1,33 @@
+{
+  "frames": 64,
+  "width": 1246,
+  "height": 1513,
+  "sizes": {
+    "xl": {
+      "width": 1080,
+      "height": 1311,
+      "avifBytes": 2471128,
+      "formats": [
+        "avif"
+      ]
+    },
+    "lg": {
+      "width": 760,
+      "height": 923,
+      "avifBytes": 1680157,
+      "formats": [
+        "avif"
+      ]
+    },
+    "sm": {
+      "width": 480,
+      "height": 583,
+      "avifBytes": 976638,
+      "formats": [
+        "avif",
+        "webp"
+      ],
+      "webpBytes": 1953098
+    }
+  }
+}

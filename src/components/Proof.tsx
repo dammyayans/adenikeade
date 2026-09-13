@@ -5,8 +5,19 @@ export function Proof() {
   const { ref, shown } = useReveal<HTMLDivElement>(0.3);
 
   return (
-    <section data-ground="butter" className="py-14 desktop:py-20">
-      <div ref={ref} className="mx-auto max-w-[var(--container)] px-[var(--gutter)]">
+    <section data-ground="butter" className="relative z-20 py-14 desktop:py-20">
+      {/* The hero film passes behind this section, and figures set in ink over a
+          crochet cardigan are unreadable. This is a sheet of the section's own
+          ground at 78% — invisible against the page, but it frosts her back far
+          enough for the numbers to hold. It tracks --ground, so the crossfade on
+          scroll still works. Same device as the reference site's project card
+          sliding over the portrait. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{ background: 'color-mix(in srgb, var(--ground) 78%, transparent)' }}
+      />
+      <div ref={ref} className="relative mx-auto max-w-[var(--container)] px-[var(--gutter)]">
         <p className="label m-0 mb-8 opacity-60">What I moved</p>
         <dl className="m-0 grid grid-cols-2 gap-x-6 gap-y-9 desktop:grid-cols-4">
           {proof.map((p, i) => (
