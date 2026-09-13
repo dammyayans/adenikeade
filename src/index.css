@@ -142,6 +142,21 @@ body {
   animation-delay: var(--d, 0s);
 }
 
+/* The crossing bands. The word list is laid down twice, so travelling exactly half
+   the track lands on its own beginning and the loop is invisible. Reduced motion
+   parks it — the global override above stops the animation, and either end of it
+   shows a full set of words, so it stays legible standing still. */
+.tape-track {
+  display: flex;
+  width: max-content;
+  animation: tape-run 34s linear infinite;
+}
+.tape-track--reverse { animation-direction: reverse; }
+@keyframes tape-run {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
 /* Pulsing availability dot. */
 .dot {
   width: 7px;
