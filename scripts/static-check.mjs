@@ -30,7 +30,7 @@ const server = createServer(async (req, res) => {
 
 await new Promise((r) => server.listen(5177, r));
 
-const routes = ['/', '/work/power-shift', '/work/wetech-conference', '/work/impact-report',
+const routes = ['/', '/work/power-shift', '/work/wetech-2023-2024', '/work/impact-report',
                 '/work/wetech-africa', '/work/interswitch', '/work/does-not-exist'];
 
 let fail = 0;

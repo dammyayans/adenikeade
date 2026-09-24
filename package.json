@@ -11,6 +11,7 @@
     "assets:img": "node scripts/build-images.mjs",
     "assets:pdf": "node scripts/build-pdf.mjs",
     "assets:video": "node scripts/build-video.mjs",
+    "assets:film": "node scripts/build-film.mjs",
     "verify": "node scripts/static-check.mjs"
   },
   "dependencies": {

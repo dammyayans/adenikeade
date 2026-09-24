@@ -66,6 +66,22 @@
       "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoUABkAPxFws1MsJaSisBgIAYAiCUAZQAI/tRPfBnOQx56rWHOYil+isbT9wAD+0fgzuQ69ikI1OR1gyfCnx6NFwOaE+v1eKCQx1UR+fWCWPY91zVO+an+gHxyBbfU2V5h+WpOA7+b0BThwEM6wd+yzL/ILurEAhOZBUXcKYg5O5NFU1q0cHE0t+w5c8xH225Kv33r3cUuNBmf6VjaEkj0Fv/tRpq63Z9grU0hZc5CJ9Oa4AAA="
     }
   ],
+  "eventsite": [
+    {
+      "slug": "event-site-hero",
+      "source": "01 Hero.png",
+      "width": 5760,
+      "height": 3760,
+      "ratio": 1.5319,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600
+      ],
+      "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoUAA0APxFysFAsJqSisAgBgCIJYgAAWqAInjgjIz28VTsAAP6/u9I3vUUN9qrMaYUp5zMaNTGa47UuANyQRi4KaH7DphsP1e/cUMVuEHKY48zV5T2UDF76GTb3QgnRYouDFnN+RIJx9wPWTGmY2X71+jmy42KOAAA="
+    }
+  ],
   "conference": [
     {
       "slug": "conf24-welcome-archway",
@@ -96,6 +112,21 @@
         1800
       ],
       "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoUAA0APxFysFAsJqSisAgBgCIJZAC22fqgO7PD9tXKBw5cgogA/rHQ7/sQSheT0IvlmwLXI6BPzo8n+7w+XjaIonEvPUDwC0L5gkm/NFOrf3BrdlbrN1JURxanIEHbDSVLxnhfzc39vdUuWeCglp9m19dIAs/2+SJX8g40Lzh/hB6pGpPwEpoFrWAAAA=="
+    },
+    {
+      "slug": "conf24-stage-backdrop",
+      "source": "BODU5682.jpg",
+      "width": 5298,
+      "height": 3532,
+      "ratio": 1.5,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAwCdASoUAA0APxFysFAsJqSisAgBgCIJYwAAUbJ9kdNz7mgA/Ge4KM40sXrIJEv50WpktyK8Qe8qgcQ72MVvNBS/dfrU8ZsccqWxqVGsxY+Q93bMaTl+P8GWp0aE9IAAAA=="
     },
     {
       "slug": "conf24-way-forward",
@@ -156,6 +187,21 @@
         1800
       ],
       "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQAwCdASoUAA0APxFysFAsJqSisAgBgCIJQAAKQNXB8aaoFqrAAP7EAeBCAdT97q8/JxyJAtRAALNV+2UwFJurLmCcHFetSlGn0CIcXVmXu80Wh753z8S3nmZbC+ggKRMooEJszUdVPxcDMtSFYSW2iIb2oAomCsJsiGtwXrdYAA=="
+    },
+    {
+      "slug": "conf24-panel-session",
+      "source": "DSC_1449.jpg",
+      "width": 6016,
+      "height": 4016,
+      "ratio": 1.498,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoUAA0APxFysFAsJqSisAgBgCIJZgCAAAfbjFpWl7wjKKttGAD+vJv0syrUzewp7ie4/j6msadSh26GRaj7RMsJVONrLsdyYBTGcUEuSlxfS/4qisx495kILDkYGYGDaExTOudd6NeU0W5Ug/EB9wAA"
     },
     {
       "slug": "conf24-main-stage",
@@ -503,6 +549,44 @@
       "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACQBQCdASoUABkAPxF+tlWsJ6SjKAgBgCIJQBjV0GdEz/gHlpSvDZUE8Txrpy1Ex5Tjy4D/AAD+53vzgOKq79jaADXyNUY3be/0eaSSWfxYDsipBdkMb6AADMfZu9FMTw1lcGViZUKD1Lgizzghh8XVTU4ux2FfAM8CzuBpInNya9H9dbKWnBdaqkIGn99cAB8BFg1g5dayFEuOIbJRifla+W9hKlgWJR9G1oXLlOZgYi+ajQAAAA=="
     },
     {
+      "slug": "wt-pitchher",
+      "source": "PitchHer2.jpg",
+      "width": 2160,
+      "height": 2160,
+      "ratio": 1,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACwBACdASoUABQAPxF8slQsJ6QjKAqpgCIJQAAFVkqElrtza5ykZ28JR1RWJ5wAAP3Vu5NqejazRXsjOIIEfsJj6k9tEu6hSSGyerSzKnYzFf/PrmUcspSjmx2bNMSA9BeF+ISSe2/zwIojjhb4Ww2qdf5cTB2lxAU3QxwBm72gG8G+9U4jzT+nVMDYSzm8d9gUixkWeR4vv353rWi2SrnQAAAAAA=="
+    },
+    {
+      "slug": "wt-bhm",
+      "source": "BHM 2026.png",
+      "width": 1080,
+      "height": 1350,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800
+      ],
+      "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAAAQBQCdASoUABkAPxF8s1QsJ6QjKAqpgCIJQBkagfhQDDN/yPism3EQsqQB1wIocjYAAN+80FT0hjXpGVDdG5DVPPxh/iJfDrj8f7iXM/BsMH2oz3DDIBAbBtkluk3d8/LGK7vRzUfbnBUEbATg0SEJh9bGxpRaVT2jzX4s7/iQB9SsbQNKo5q3X1ngLPQFFdr/rVqb/+Fx+cXEEQ37P37EA3/eeWnjIWfw+KhmekAAAA=="
+    },
+    {
+      "slug": "wt-wcw",
+      "source": "WCW.png",
+      "width": 4320,
+      "height": 5400,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800,
+        1200
+      ],
+      "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBQCdASoUABkAPxF8s1QsJ6QjKAqpgCIJbACxHoSBSdA0hWom8ZdxdgPJBZajcG3WkEogAP6bEhgE/mUbtkFsNZc/VGEOsQAuuMRv7UvA+9mm4D1vuRLokHNfSuuahmdPul4IubumnpQiVpjcu+QqPKPr8n0UgrGcNbzOE2odQDXRRz92gcPS+tu1bEOKBwIR6WZkPnzlHWvCDNxsdklTCi4vnj9XOlqmmw8SgCRzoAAA"
+    },
+    {
       "slug": "wt-townhall",
       "source": "TH 2.png",
       "width": 2160,
@@ -514,6 +598,18 @@
         1200
       ],
       "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAQBQCdASoUABkAPxGAt1WsJ6UjKAgBgCIJZADE2YtebysUNj6EVE5r3+fa0B86GfrkAP7gqQh5sPp7X+xIzQEpd0mTn3G3dNcnhkBFn7XNW/Y45wnJUsY7bBcVv1m3AlDC4eYSGmx6tfG14K7IR7ewNiSyNae3r74RjJnOGnqEYfELa+Yl60Od/Pp75i9mpV/10FDNekVqJcDamalZrs//zpjmM0HUdIo4gAPvWrAVCf2pb+byZ3EoV3wEddFKZsAAAA=="
+    },
+    {
+      "slug": "wt-storytelling",
+      "source": "Success Design 2.png",
+      "width": 1080,
+      "height": 1350,
+      "ratio": 0.8,
+      "widths": [
+        480,
+        800
+      ],
+      "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoUABkAPxF8slIsKCSisBgIAYAiCWYAvkgywx0bNGVn7Hfy0WEMXxj33AAA/uro7SB1jvrW7Lg58Z1Bu2V4L7BFcXTAVry4jyxiUzlcnAixjpvTf2fmkAflQpy5GHL6FuYANgf8L3TjhdtJH23pxy1bi3v+wd8EREwfe5s8eNJm037PEvmn73RnXOeIPtbHSQ9trg0gAAA="
     }
   ]
 }

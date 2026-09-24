@@ -1,20 +1,31 @@
+import { Link, useLocation } from 'react-router-dom';
 import { nav, site } from '../data/site';
 import { useClock } from '../hooks/useClock';
 import { GrannySquare } from './GrannySquare';
 
 export function Nav() {
   const time = useClock();
+  const { pathname } = useLocation();
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 mix-blend-normal">
       <div className="mx-auto flex max-w-[var(--container)] items-center justify-between gap-4 px-[var(--gutter)] py-4">
-        <a href="#top" className="flex items-center gap-2.5 py-3 -my-3 no-underline" aria-label={`${site.name} — home`}>
+        {/* Home from anywhere: a route change on a case study, a jump to the top
+            when the home page is already under it. */}
+        <Link
+          to="/"
+          onClick={() => {
+            if (pathname === '/') window.scrollTo(0, 0);
+          }}
+          className="flex items-center gap-2.5 py-3 -my-3 no-underline"
+          aria-label={`${site.name} — home`}
+        >
           <GrannySquare size={20} />
           <span className="hidden font-display text-[15px] font-bold tracking-[-0.03em] md:inline">
             {site.name}
             <sup className="ml-0.5 text-[8px] text-[var(--color-pink)]">®</sup>
           </span>
-        </a>
+        </Link>
 
         <nav aria-label="Primary">
           <ul className="flex list-none items-center gap-4 p-0 md:gap-6 desktop:gap-6">

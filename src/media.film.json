@@ -1,0 +1,16 @@
+{
+  "film": [
+    {
+      "slug": "conf24-aftermovie-poster",
+      "source": "scratch/film/raw.mp4",
+      "width": 638,
+      "height": 360,
+      "ratio": 1.7722,
+      "widths": [
+        480,
+        638
+      ],
+      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoUAAsAPxFysFAsJqSisAgBgCIJagDG9B6F+ddHygZ0GgAA/qlGGYPHM5dm0fBQGVcFUBwQnmj8aeSFxICZM9TcZF5OI07cgPYrd+Zgv6R2Df2t/hm76Dr2Ws6848u6/jW+IS6bw5pRPOGJxhRUVEQA"
+    }
+  ]
+}

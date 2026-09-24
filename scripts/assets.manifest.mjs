@@ -16,6 +16,13 @@ export const SETS = {
     ],
   },
 
+  // 01b — event.wetech.africa · the live event site she designed
+  eventsite: {
+    dir: 'Event Website',
+    w: 1600,
+    files: [['01 Hero.png', 'event-site-hero']],
+  },
+
   // 02 — Wetech Conference 2024 · environmental branding
   conference: {
     dir: 'Event Branding/Wetech Conference 2024',

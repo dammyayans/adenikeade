@@ -1,7 +1,8 @@
 import media from '../media.json';
 import report from '../media.report.json';
+import film from '../media.film.json';
 
-const SETS: Record<string, MediaItem[]> = { ...media, ...report } as never;
+const SETS: Record<string, MediaItem[]> = { ...media, ...report, ...film } as never;
 
 export type MediaItem = {
   slug: string;

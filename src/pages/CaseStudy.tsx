@@ -5,11 +5,43 @@ import { Picture } from '../components/Picture';
 import { Stripe } from '../components/Stripe';
 import { NotFound } from './NotFound';
 
+type PlateProps = {
+  set: string;
+  slug: string;
+  ratio: string;
+  anchor?: string;
+  label?: string;
+  alt: string;
+  sizes: string;
+};
+
+function LeadPlate({ set, slug, ratio, anchor, label, alt, sizes }: PlateProps) {
+  return (
+    <figure className="m-0">
+      <div
+        className="overflow-hidden rounded-[2px] bg-[var(--color-taupe)]"
+        style={{ aspectRatio: ratio }}
+      >
+        <Picture
+          set={set}
+          slug={slug}
+          alt={alt}
+          sizes={sizes}
+          priority
+          className={`h-full w-full object-cover ${anchor === 'top' ? 'object-top' : 'object-center'}`}
+        />
+      </div>
+      {label && <figcaption className="caption mt-3 opacity-60">{label}</figcaption>}
+    </figure>
+  );
+}
+
 export default function CaseStudyPage() {
   const { slug = '' } = useParams();
   const study = getCaseStudy(slug);
   if (!study) return <NotFound />;
   const next = nextCaseStudy(slug);
+  const pair = study.lead.second;
   // Never let the rail repeat the ground it sits under, or the two merge.
   const railGround = study.chapters.at(-1)?.ground === 'taupe' ? 'butter' : 'taupe';
 
@@ -47,18 +79,30 @@ export default function CaseStudyPage() {
 
         <section data-ground="bone" className="pb-16">
           <div className="mx-auto max-w-[var(--container)] px-[var(--gutter)]">
-            <div
-              className="overflow-hidden rounded-[2px] bg-[var(--color-taupe)]"
-              style={{ aspectRatio: study.lead.ratio }}
-            >
-              <Picture
+            {/* One plate, or two side by side where the study spans two editions.
+                Both halves stay priority: on a diptych they are equally above the
+                fold, so handing one of them a head start only delays the other. */}
+            <div className={pair ? 'grid grid-cols-1 gap-5 md:grid-cols-2' : ''}>
+              <LeadPlate
                 set={study.lead.set}
                 slug={study.lead.slug}
+                ratio={study.lead.ratio}
+                anchor={study.lead.anchor}
+                label={study.lead.label}
                 alt={`${study.title} — ${study.client}`}
-                sizes="(min-width: 1200px) 92vw, 94vw"
-                priority
-                className={`h-full w-full object-cover ${study.lead.anchor === 'top' ? 'object-top' : 'object-center'}`}
+                sizes={pair ? '(min-width: 810px) 46vw, 94vw' : '(min-width: 1200px) 92vw, 94vw'}
               />
+              {pair && (
+                <LeadPlate
+                  set={pair.set}
+                  slug={pair.slug}
+                  ratio={study.lead.ratio}
+                  anchor={pair.anchor}
+                  label={pair.label}
+                  alt={`${study.title} — ${study.client}`}
+                  sizes="(min-width: 810px) 46vw, 94vw"
+                />
+              )}
             </div>
           </div>
         </section>

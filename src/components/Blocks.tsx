@@ -1,5 +1,6 @@
 import type { Block } from '../data/caseStudies';
 import { Picture } from './Picture';
+import { Film } from './Film';
 import { useReveal } from '../hooks/useReveal';
 
 const COLS: Record<2 | 3, string> = {
@@ -31,28 +32,46 @@ export function BlockView({ block }: { block: Block }) {
         </div>
       );
 
-    case 'full':
+    // Where the block names an `href` the plate itself is the link, so the
+    // whole image is the target rather than a word tucked under it.
+    case 'full': {
+      const plate = (
+        <div
+          className="overflow-hidden rounded-[2px] bg-[var(--color-taupe)]"
+          style={{ aspectRatio: block.ratio ?? '3 / 2' }}
+        >
+          <Picture
+            set={block.set}
+            slug={block.slug}
+            alt={block.caption}
+            sizes="(min-width: 1200px) 92vw, 94vw"
+            className={`h-full w-full object-cover ${block.anchor === 'top' ? 'object-top' : 'object-center'}`}
+          />
+        </div>
+      );
+
       return (
         <div ref={ref} className={cls}>
           <figure className="m-0">
-          <div
-            className="overflow-hidden rounded-[2px] bg-[var(--color-taupe)]"
-            style={{ aspectRatio: block.ratio ?? '3 / 2' }}
-          >
-            <Picture
-              set={block.set}
-              slug={block.slug}
-              alt={block.caption}
-              sizes="(min-width: 1200px) 92vw, 94vw"
-              className={`h-full w-full object-cover ${block.anchor === 'top' ? 'object-top' : 'object-center'}`}
-            />
-          </div>
+            {block.href ? (
+              <a
+                href={block.href}
+                target="_blank"
+                rel="noreferrer"
+                className="block no-underline transition-opacity duration-[var(--dur-base)] hover:opacity-85"
+              >
+                {plate}
+              </a>
+            ) : (
+              plate
+            )}
             <figcaption className="caption mt-3 max-w-[64ch] opacity-60">
               {block.caption}
             </figcaption>
           </figure>
         </div>
       );
+    }
 
     case 'grid':
       return (
@@ -77,6 +96,19 @@ export function BlockView({ block }: { block: Block }) {
             </figure>
           ))}
         </div>
+      );
+
+    // Film brings its own reveal and its own measure, so it is returned whole
+    // rather than wrapped in the shared box the pictures use.
+    case 'film':
+      return (
+        <Film
+          slug={block.slug}
+          poster={block.poster}
+          caption={block.caption}
+          credit={block.credit}
+          ratio={block.ratio}
+        />
       );
 
     case 'quote':

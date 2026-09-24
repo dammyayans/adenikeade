@@ -36,6 +36,11 @@
 
   --container: 1340px;
   --gutter: 18px;
+
+  /* Case-study film measure. Held near the source's own 638px rather than run
+     full-bleed, so a 360p cut is never stretched across a page whose stills are
+     served at up to 1800. Raise this when the master lands. */
+  --film-measure: 760px;
 }
 @media (min-width: 810px) { :root { --gutter: 15px; } }
 
