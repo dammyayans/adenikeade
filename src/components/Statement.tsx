@@ -11,11 +11,11 @@ export function Statement() {
       >
         <p className="label m-0 mb-7 opacity-60">The part after the logo</p>
         <p className="display m-0 max-w-[19ch] text-[clamp(34px,6.4vw,88px)]">
-          Most brand work dies in the handover<span className="text-[var(--color-rose)]">.</span>
+          Most of what I make gets used, not presented<span className="text-[var(--color-rose)]">.</span>
         </p>
         <p className="mt-8 mb-0 max-w-[54ch] text-[clamp(16px,1.7vw,19px)] leading-[1.5] opacity-75">
-          Mine gets built. A thirty-page report. A conference two thousand women walk
-          through. A compliance notice written in pidgin so colleagues actually finish it.
+          A thirty-page report. A conference two thousand women walk through. A
+          compliance notice written in pidgin so colleagues actually finish reading it.
         </p>
       </div>
     </section>

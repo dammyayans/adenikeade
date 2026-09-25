@@ -20,10 +20,10 @@ export const nav = [
 
 /** Her outcomes — deliberately separate from the organisation's figures. */
 export const proof = [
-  { figure: "1K→5K", label: "Instagram growth driven at Wetech" },
+  { figure: "1K→9K", label: "Instagram growth driven at Wetech" },
   { figure: "+80%", label: "Engagement lift over the same period" },
-  { figure: "200+", label: "Social assets designed and shipped" },
-  { figure: "30pp", label: "Annual report, designed end to end" },
+  { figure: "500+", label: "Social assets designed and shipped" },
+  { figure: "30+ pages", label: "Annual report, designed end to end" },
 ] as const;
 
 export type Project = {
@@ -124,16 +124,14 @@ export const projects: Project[] = [
 export const about = {
   lead: "I design the things a brand actually meets people through.",
   paragraphs: [
-    "I hold brand at two organisations at once — Interswitch, where the work is internal communications for a fintech, and Wetech, where I have led brand for three years across identity, web, events and campaign. The two could not look less alike, which is the point: a brand system is only worth anything if it survives contact with a real brief.",
-    "Most of what I make gets used rather than presented. A thirty-page annual report. A conference two thousand women walk through. A compliance notice written in pidgin so that colleagues actually finish reading it. I am interested in the part after the logo — where a brand has to hold together across a stage backdrop, a data page and a WhatsApp-sized flyer on the same afternoon.",
+    "I’m a brand designer at Interswitch, where the work is internal communications for a fintech. Most of what you see here comes out of three years leading brand at Wetech — identity, web, events and campaign. The two could not look less alike, which is the point: a brand system is only worth anything if it survives contact with a real brief.",
+    "The work I like best is the work that has to survive a real room. I am interested in the part after the logo — where a brand has to hold together across a stage backdrop, a data page and a WhatsApp-sized flyer on the same afternoon, and still read as one thing.",
   ],
   services: [
-    "Brand identity",
     "Event branding",
     "Editorial & report design",
     "Campaign systems",
     "Art direction",
-    "Product & UX design",
   ],
   tools: ["Figma", "Illustrator", "Photoshop", "Canva"],
 } as const;

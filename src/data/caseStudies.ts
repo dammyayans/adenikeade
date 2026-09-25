@@ -114,19 +114,19 @@ export const caseStudies: CaseStudy[] = [
                 set: "powershift",
                 slug: "power-shift-route-chrome",
                 caption:
-                  "Route A — Chrome. Iridescent, optimistic, the most forward-looking of the three.",
+                  "Route A — chrome. Iridescent and optimistic, the most forward-looking of the three.",
               },
               {
                 set: "powershift",
                 slug: "power-shift-route-violet",
                 caption:
-                  "Route B — Violet. Deepest and most editorial; closest in feel to the previous editions.",
+                  "Route B — violet. The deepest of the three, and the closest to the earlier editions.",
               },
               {
                 set: "powershift",
                 slug: "power-shift-route-lime",
                 caption:
-                  "Route C — Lime. Black field cut by a single lime bar. Most confident, least warm.",
+                  "Route C — lime on black. The boldest of the three, and the coldest.",
               },
             ],
           },
@@ -164,7 +164,7 @@ export const caseStudies: CaseStudy[] = [
             slug: "power-shift-speaker-card",
             ratio: "4 / 5",
             caption:
-              "Speaker announcement, applying the chosen route at social crop with the sponsor bar intact.",
+              "Speaker announcement, cropped for social with the sponsor bar intact.",
           },
         ],
       },
@@ -185,7 +185,7 @@ export const caseStudies: CaseStudy[] = [
             ratio: "3 / 2",
             anchor: "top",
             href: "https://event.wetech.africa/",
-            caption: "event.wetech.africa — UI/UX design. Open the live site ↗",
+            caption: "event.wetech.africa — UI and UX design. Open the live site ↗",
           },
         ],
       },
@@ -277,19 +277,19 @@ export const caseStudies: CaseStudy[] = [
               {
                 set: "conference23",
                 slug: "conf23-her-tech-backdrop",
-                caption: "Her Tech, Her Rules — photo backdrop, 2023.",
+                caption: "Her Tech, Her Rules — the photo backdrop.",
               },
               {
                 set: "conference23",
                 slug: "conf23-founders-wheel",
                 caption:
-                  "The Founders Wheel — a printed game built to slow people down.",
+                  "The Founders Wheel — a printed game, built to give people a reason to stop and talk.",
               },
               {
                 set: "conference23",
                 slug: "conf23-founders-stage",
                 caption:
-                  "Founders stage, with the session named above the panel.",
+                  "The founders stage, with the session named above the panel.",
               },
             ],
           },
@@ -301,19 +301,19 @@ export const caseStudies: CaseStudy[] = [
               {
                 set: "conference23",
                 slug: "conf23-main-banner",
-                caption: "Main banner and audience.",
+                caption: "The main banner, with the room filling up.",
               },
               {
                 set: "conference23",
                 slug: "conf23-session-screens",
                 caption:
-                  "Session screens, carrying the same lockup to a lit surface.",
+                  "Session screens, carrying the same lockup on screen.",
               },
               {
                 set: "conference23",
                 slug: "conf23-lanyards",
                 caption:
-                  "Lanyards and medals — the smallest surface in the system.",
+                  "Lanyards and medals — the smallest pieces in the system.",
               },
             ],
           },
@@ -334,7 +334,7 @@ export const caseStudies: CaseStudy[] = [
             slug: "conf24-aftermovie",
             poster: "conf24-aftermovie-poster",
             caption:
-              "The route, walked: the archway, the queue wrapping the building, registration, the lanyard and QR, the doodle wall, and out onto the main stage with the hall full behind it.",
+              "A walk through the venue — the archway, the queue wrapping the building, registration, the lanyards, the doodle wall, and out onto the main stage.",
             credit: "Film: Wetech. Environmental branding and signage: Adenike Adedokun.",
           },
           {
@@ -343,7 +343,7 @@ export const caseStudies: CaseStudy[] = [
             slug: "conf24-way-forward",
             ratio: "3 / 2",
             caption:
-              "We Are The Way Forward & We Are Here — main stage backdrop, 2024.",
+              "We Are The Way Forward & We Are Here — the main stage backdrop.",
           },
           {
             kind: "grid",
@@ -353,17 +353,17 @@ export const caseStudies: CaseStudy[] = [
               {
                 set: "conference",
                 slug: "conf24-registration",
-                caption: "Registration wall.",
+                caption: "The registration wall.",
               },
               {
                 set: "conference",
                 slug: "conf24-photo-panels",
-                caption: "She Believed She Could / Explore — photo panels.",
+                caption: "She Believed She Could / Explore — the photo panels.",
               },
               {
                 set: "conference",
                 slug: "conf24-sponsor-wall",
-                caption: "Sponsor wall, carrying eleven partner marks.",
+                caption: "The sponsor wall, holding eleven partner marks.",
               },
             ],
           },
@@ -391,13 +391,13 @@ export const caseStudies: CaseStudy[] = [
                 set: "conference",
                 slug: "conf24-placards",
                 caption:
-                  "Attendees with the placard set — the campaign leaving the venue.",
+                  "Attendees with the placards, on the way out.",
               },
               {
                 set: "conference",
                 slug: "conf24-main-stage",
                 caption:
-                  "Women Who Believe / Women Who Inspire — flanking stage panels.",
+                  "Women Who Believe / Women Who Inspire — the panels either side of the stage.",
               },
             ],
           },
@@ -419,7 +419,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Wetech",
     year: "2025",
     proposition:
-      "Thirty pages that had to hold for two readers at once — an institutional funder scanning for numbers, and a first-time community member looking for herself in it.",
+      "Wetech’s year in thirty pages — the numbers a funder needs, and the stories those numbers came from.",
     meta: [
       { k: "Client", v: "Wetech" },
       { k: "Role", v: "Brand designer — editorial and information design" },
@@ -460,13 +460,13 @@ export const caseStudies: CaseStudy[] = [
                 set: "report",
                 slug: "report-theory-of-change",
                 caption:
-                  "Theory of change — four intervention clusters carried across activities, outcomes and impact.",
+                  "Theory of change, mapped across activities, outcomes and impact.",
               },
               {
                 set: "report",
                 slug: "report-reach-data",
                 caption:
-                  "Reach and footprint, with beneficiary distribution by age and professional experience.",
+                  "Reach and footprint, broken down by age and years of experience.",
               },
             ],
           },
@@ -479,13 +479,13 @@ export const caseStudies: CaseStudy[] = [
                 set: "report",
                 slug: "report-impact-signals",
                 caption:
-                  "Impact signals — the densest page, built as a three-column table.",
+                  "Impact signals — the densest page in the report, set as a three-column table.",
               },
               {
                 set: "report",
                 slug: "report-celebrateher",
                 caption:
-                  "#CelebrateHer — the campaign page, set for a different reading speed.",
+                  "The #CelebrateHer campaign page.",
               },
             ],
           },
@@ -506,19 +506,6 @@ export const caseStudies: CaseStudy[] = [
               { k: "Campaign reach", v: "290k+" },
             ],
             note: "These are Wetech’s results, not mine. I designed the report and the campaign system that communicated them.",
-          },
-        ],
-      },
-      {
-        ground: "bone",
-        blocks: [
-          {
-            kind: "full",
-            set: "report",
-            slug: "report-founders-letter",
-            ratio: "1 / 1.414",
-            caption:
-              "Co-founders’ letter — the one page in the document allowed to be quiet.",
           },
         ],
       },
@@ -578,12 +565,12 @@ export const caseStudies: CaseStudy[] = [
               {
                 set: "website",
                 slug: "web-programs",
-                caption: "Programs — every route in, ordered by commitment.",
+                caption: "Programs — every way in, ordered by commitment.",
               },
               {
                 set: "website",
                 slug: "web-media",
-                caption: "Media — press, coverage and a route for journalists.",
+                caption: "Media — press and coverage, and where journalists start.",
               },
             ],
           },
@@ -602,7 +589,7 @@ export const caseStudies: CaseStudy[] = [
             kind: "text",
             heading: "The system beyond the site",
             body: [
-              "The site is the hub, but most people meet the brand on a phone in a feed. These are the campaign surfaces built from the same system — programme calls, editorial cards, community formats — which is where the two hundred-odd assets and the growth from one thousand to five thousand followers actually came from.",
+              "The site is the hub, but most people meet the brand on a phone in a feed. These are the campaign surfaces built from the same system — programme calls, editorial cards, community formats — which is where the two hundred-odd assets and the growth from one thousand to nine thousand followers actually came from.",
             ],
           },
           {
@@ -619,7 +606,7 @@ export const caseStudies: CaseStudy[] = [
                 set: "campaign",
                 slug: "wt-mentors",
                 caption:
-                  "Mentorship Program — call for mentors, same system inverted.",
+                  "Mentorship Program — call for mentors, the same layout inverted.",
               },
               {
                 set: "campaign",
@@ -637,13 +624,13 @@ export const caseStudies: CaseStudy[] = [
                 set: "campaign",
                 slug: "wt-editorial-power",
                 caption:
-                  "Power Doesn’t Sound Like It Used To — community writer editorial.",
+                  "Power Doesn’t Sound Like It Used To — a community writer editorial.",
               },
               {
                 set: "campaign",
                 slug: "wt-editorial-motherhood",
                 caption:
-                  "Motherhood Is Not a Pause Button — same editorial format.",
+                  "Motherhood Is Not a Pause Button — the same format again.",
               },
               {
                 set: "campaign",
@@ -724,7 +711,7 @@ export const caseStudies: CaseStudy[] = [
                 set: "interswitch",
                 slug: "isw-demo-day-b",
                 caption:
-                  "Product Demo Day — route B, same week, different temperature.",
+                  "Product Demo Day — route B, same week, a different mood.",
               },
             ],
           },
@@ -748,7 +735,7 @@ export const caseStudies: CaseStudy[] = [
                 set: "interswitch",
                 slug: "isw-ember-season",
                 caption:
-                  "Staying Vigilant This Ember Season — seasonal fraud awareness.",
+                  "Staying Vigilant This Ember Season — fraud awareness for the festive run-in.",
               },
             ],
           },
@@ -800,7 +787,7 @@ export const caseStudies: CaseStudy[] = [
             slug: "isw-teamwork",
             ratio: "1 / 1.25",
             caption:
-              "Teamwork Makes the Mission Secure — risk identification framed as a shared job rather than a rule.",
+              "Teamwork Makes the Mission Secure — reporting risk framed as a shared job, not a rule.",
           },
         ],
       },

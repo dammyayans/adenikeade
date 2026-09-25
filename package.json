@@ -8,10 +8,12 @@
     "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview",
     "assets:icons": "node scripts/build-icons.mjs",
+    "assets:fonts": "node scripts/build-fonts.mjs",
     "assets:img": "node scripts/build-images.mjs",
     "assets:pdf": "node scripts/build-pdf.mjs",
     "assets:video": "node scripts/build-video.mjs",
     "assets:film": "node scripts/build-film.mjs",
+    "assets:og": "node scripts/build-og.mjs",
     "verify": "node scripts/static-check.mjs"
   },
   "dependencies": {

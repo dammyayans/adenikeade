@@ -11,26 +11,32 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <title>Adenike Adedokun — Brand Designer</title>
-    <meta name="description" content="Brand designer in Lagos. Identity, event worlds and campaign at volume for Wetech and Interswitch." />
-    <link rel="canonical" href="https://adenikeade.com/" />
+    <!-- The two faces that set the first screen: the display cut carrying the
+         headline, and the text face carrying everything under it. They live in
+         the hashed stylesheet, which a browser cannot read until it has arrived
+         — these start both files alongside it instead of after it. The rest of
+         the family set is left for the CSS to discover. `crossorigin` is
+         required on a font preload even same-origin; without it the preload is
+         discarded and the file fetched a second time. -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/fonts/bricolage-grotesque-700-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/fonts/instrument-sans-400-latin.woff2" />
 
+    <!-- head:start — everything between these markers is written per route by
+         scripts/prerender.mjs from src/data/meta.ts. What stands here is the
+         home page's, which is what the dev server and any unprerendered build
+         should show. Edit src/data/meta.ts, never this block. -->
+    <link rel="preload" as="image" href="/media/hero/poster.avif" type="image/avif" fetchpriority="high" />
+    <title>Adenike Adedokun — Brand Designer</title>
+    <meta name="description" content="Brand designer in Lagos building identity, event worlds and campaign systems at volume — for Wetech, Interswitch and FMDQ. Selected work and case studies." />
+    <link rel="canonical" href="https://adenikeade.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://adenikeade.com/" />
     <meta property="og:title" content="Adenike Adedokun — Brand Designer" />
-    <meta property="og:description" content="Identity, event worlds and campaign at volume. Lagos, Nigeria." />
-    <meta property="og:image" content="https://adenikeade.com/media/hero/og.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://adenikeade.com/media/og/home.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@500&display=swap"
-    />
-    <link rel="preload" as="image" href="/media/hero/poster.avif" type="image/avif" fetchpriority="high" />
+    <!-- head:end -->
   </head>
   <body>
     <div id="root"></div>

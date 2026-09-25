@@ -141,6 +141,21 @@ export function HeroFilm() {
     const url = (k: string, e: string, i: number) =>
       `/media/hero/seq/${k}/${String(i).padStart(3, '0')}.${e}`;
 
+    /** Resolves once the page has finished loading and the main thread has a
+     *  gap — or after a timeout, so a page that never goes idle still gets its
+     *  film. */
+    const afterLoad = () =>
+      new Promise<void>((resolve) => {
+        const idle = () => {
+          const ric = (window as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => void })
+            .requestIdleCallback;
+          if (ric) ric(() => resolve(), { timeout: 1500 });
+          else setTimeout(resolve, 200);
+        };
+        if (document.readyState === 'complete') idle();
+        else window.addEventListener('load', idle, { once: true });
+      });
+
     const load = async (src: string) => {
       const img = new Image();
       img.decoding = 'async';
@@ -268,6 +283,16 @@ export function HeroFilm() {
       highestLoaded = 0;
       scrubbing = true;
       raf = requestAnimationFrame(draw);
+
+      // The remaining 63 frames are the heaviest thing on the page — 2.4MB at
+      // the largest size — and nothing needs them until she has started to
+      // turn. Fetching them from mount put all of that in contention with the
+      // poster, the stylesheet, the fonts and the bundle, over the same
+      // connection, while the first screen was still painting. Frame 0 is
+      // already in hand above (it doubles as the format probe), so the film is
+      // never caught short; the rest waits for the page to be done.
+      await afterLoad();
+      if (cancelled) return;
 
       // Sequential from there: in order, and never flooding the connection.
       for (let i = 1; i < seq.frames; i++) {

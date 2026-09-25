@@ -8,10 +8,12 @@ import { Contact } from './components/Contact';
 import { Stripe } from './components/Stripe';
 import { useGround } from './hooks/useGround';
 import { useScrollProgress } from './hooks/useScrollProgress';
+import { useHead } from './hooks/useHead';
 
 export default function App() {
   const { pathname, hash } = useLocation();
   useGround(pathname);
+  useHead(pathname);
   const progress = useScrollProgress();
 
   // A new route starts at the top; an in-page hash keeps its anchor.
