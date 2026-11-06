@@ -38,9 +38,10 @@
   --container: 1340px;
   --gutter: 18px;
 
-  /* Case-study film measure. Held near the source's own 638px rather than run
+  /* Case-study film measure. Held near the 2024 cut's own 638px rather than run
      full-bleed, so a 360p cut is never stretched across a page whose stills are
-     served at up to 1800. Raise this when the master lands. */
+     served at up to 1800. Raise this when its master lands, along with the
+     poster's `sizes` in Film.tsx. */
   --film-measure: 760px;
 }
 @media (min-width: 810px) { :root { --gutter: 15px; } }

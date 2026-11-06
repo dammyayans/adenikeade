@@ -2,6 +2,14 @@
 // `w` = the widest the image is ever rendered; derivatives are capped there.
 export const ROOT = 'raw/Adenike Adedokun - Brand Design';
 
+// Shared by build-images and build-image-set so a one-set rebuild always matches
+// a full one. Checked at 1:1 against photos, UI captures and small type on the
+// stage screens: no visible loss here, softening starts around AVIF 40.
+export const FORMATS = [
+  ['avif', { quality: 45, effort: 6 }],
+  ['webp', { quality: 72, effort: 6, smartSubsample: true }],
+];
+
 export const SETS = {
   // 01 — THE POWER SHIFT · Wetech Conference 2026 · lead case study
   powershift: {
@@ -28,7 +36,7 @@ export const SETS = {
       ['BODU6793.jpg', 'ps26-find-your-word'],
       ['DSC_7027.jpg', 'ps26-wall-shaping'],
       ['DSC_7032.jpg', 'ps26-wall-building'],
-      ['DSC_7175.jpg', 'ps26-career-studio'],
+      ['Career Studio Booth.jpg', 'ps26-career-studio-booth'],
       ['BODU7449.jpg', 'ps26-welcome-screen'],
       ['DSC_7417.jpg', 'ps26-crew-tees'],
     ],
@@ -48,12 +56,10 @@ export const SETS = {
     files: [
       ['BODU5644.jpg', 'conf24-welcome-archway'],
       ['BODU5179.jpg', 'conf24-registration'],
-      ['BODU5682.jpg', 'conf24-stage-backdrop'],
       ['BODU5706.jpg', 'conf24-way-forward'],
       ['BODU5691.jpg', 'conf24-photo-panels'],
       ['BODU5058.jpg', 'conf24-placards'],
       ['BODU5098.jpg', 'conf24-sponsor-wall'],
-      ['DSC_1449.jpg', 'conf24-panel-session'],
       ['DSC_1408.jpg', 'conf24-main-stage'],
     ],
   },
@@ -102,11 +108,7 @@ export const SETS = {
       ['Community writer.png',  'wt-editorial-power'],
       ['Call for Mentees.png',  'wt-mentees'],
       ['Call for Mentors.png',  'wt-mentors'],
-      ['PitchHer2.jpg',         'wt-pitchher'],
-      ['BHM 2026.png',          'wt-bhm'],
-      ['WCW.png',               'wt-wcw'],
       ['TH 2.png',              'wt-townhall'],
-      ['Success Design 2.png',  'wt-storytelling'],
     ],
   },
 };

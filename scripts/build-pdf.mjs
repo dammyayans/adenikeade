@@ -42,7 +42,7 @@ for (const [n, slug] of PAGES) {
   const png = canvas.toBuffer('image/png');
 
   for (const w of [480, 800, 1200]) {
-    for (const [fmt, o] of [['avif', { quality: 55, effort: 6 }], ['webp', { quality: 80 }]]) {
+    for (const [fmt, o] of [['avif', { quality: 48, effort: 6 }], ['webp', { quality: 74, effort: 6, smartSubsample: true }]]) {
       await sharp(png).resize(w, null, { withoutEnlargement: true })[fmt](o)
         .toFile(path.join(OUT, `${slug}-${w}.${fmt}`));
     }

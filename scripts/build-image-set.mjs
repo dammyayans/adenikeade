@@ -5,7 +5,7 @@
 import sharp from 'sharp';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, SETS } from './assets.manifest.mjs';
+import { FORMATS, ROOT, SETS } from './assets.manifest.mjs';
 
 const OUT = 'public/media';
 const WIDTHS = [480, 800, 1200, 1600, 1800];
@@ -28,7 +28,7 @@ for (const [file, slug] of set.files) {
   if (!widths.length) widths.push(Math.min(set.w, meta.width));
 
   for (const w of widths) {
-    for (const [fmt, opts] of [['avif', { quality: 52, effort: 6 }], ['webp', { quality: 78 }]]) {
+    for (const [fmt, opts] of FORMATS) {
       const info = await sharp(src).rotate()
         .resize(w, null, { withoutEnlargement: true })
         [fmt](opts)

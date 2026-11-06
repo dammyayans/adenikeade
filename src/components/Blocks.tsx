@@ -8,9 +8,11 @@ const COLS: Record<2 | 3, string> = {
   3: 'md:grid-cols-2 desktop:grid-cols-3',
 };
 
+// The container stops at 1310px of content, so past 1370px the columns stop growing
+// and a vw value would keep asking for more image than is ever shown.
 const SIZES: Record<2 | 3, string> = {
-  2: '(min-width: 1200px) 46vw, (min-width: 810px) 46vw, 92vw',
-  3: '(min-width: 1200px) 30vw, (min-width: 810px) 46vw, 92vw',
+  2: '(min-width: 1370px) 645px, (min-width: 810px) 46vw, 92vw',
+  3: '(min-width: 1370px) 423px, (min-width: 1200px) 30vw, (min-width: 810px) 46vw, 92vw',
 };
 
 export function BlockView({ block }: { block: Block }) {
@@ -46,7 +48,7 @@ export function BlockView({ block }: { block: Block }) {
               set={block.set}
               slug={block.slug}
               alt={block.href ? '' : block.caption}
-              sizes="(min-width: 1200px) 92vw, 94vw"
+              sizes="(min-width: 1370px) 1310px, 94vw"
               className={`h-full w-full object-cover ${block.anchor === 'top' ? 'object-top' : 'object-center'}`}
             />
           </div>

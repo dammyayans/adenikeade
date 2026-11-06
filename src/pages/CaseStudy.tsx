@@ -90,7 +90,7 @@ export default function CaseStudyPage() {
                 anchor={study.lead.anchor}
                 label={study.lead.label}
                 alt={`${study.title} — ${study.client}`}
-                sizes={pair ? '(min-width: 810px) 46vw, 94vw' : '(min-width: 1200px) 92vw, 94vw'}
+                sizes={pair ? '(min-width: 1370px) 645px, (min-width: 810px) 46vw, 94vw' : '(min-width: 1370px) 1310px, 94vw'}
               />
               {pair && (
                 <LeadPlate
@@ -100,7 +100,7 @@ export default function CaseStudyPage() {
                   anchor={pair.anchor}
                   label={pair.label}
                   alt={`${study.title} — ${study.client}`}
-                  sizes="(min-width: 810px) 46vw, 94vw"
+                  sizes="(min-width: 1370px) 645px, (min-width: 810px) 46vw, 94vw"
                 />
               )}
             </div>

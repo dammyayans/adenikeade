@@ -7,15 +7,16 @@ import { useReveal } from '../hooks/useReveal';
  *  The hero is a cut-out scrubbed by scroll, decoded from stills because scroll is
  *  continuous and nobody asked for it. This is the opposite case: it has sound,
  *  it runs to an end, and it costs nothing until it is wanted. So `preload="none"`
- *  and a real poster — the network sees one ~19KB AVIF until someone presses play.
+ *  and a real poster — the network sees one small AVIF until someone presses play.
  *
  *  Deliberately not autoplaying, and deliberately not muted. A silent loop is
  *  wallpaper; the crowd is half of what an event world actually is.
  *
- *  MEASURE — capped at `--film-measure` rather than run full-bleed. The source is
- *  638px wide (see scripts/build-film.mjs), and at this measure it lands near 1×
+ *  MEASURE — capped at `--film-measure` rather than run full-bleed. The 2024 cut is
+ *  only 638px wide (see scripts/build-film.mjs), and at this measure it lands near 1×
  *  instead of being stretched four metres across a page whose every still is
- *  served at up to 1800. When the master arrives, raise the cap. */
+ *  served at up to 1800. When its master arrives, raise the cap. The poster's `sizes`
+ *  follows this cap, so change them together. */
 type Props = {
   slug: string;
   poster: string;
@@ -67,7 +68,7 @@ export function Film({ slug, poster, caption, credit, ratio = '16 / 9' }: Props)
                 set="film"
                 slug={poster}
                 alt=""
-                sizes="(min-width: 810px) 46vw, 92vw"
+                sizes="(min-width: 826px) 760px, 92vw"
                 className="absolute inset-0 h-full w-full object-cover"
               />
               {/* Scrim: the poster is a bright banner in daylight and the control

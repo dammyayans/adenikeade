@@ -183,10 +183,10 @@
       "lqip": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAADwBQCdASoUAB4APxFwsFAsJiSisAgBgCIJbACdMoM2/JXz/4DYeXI/YgOOk1DhPaZP7cX2emsVsAD+jd+DaoEbPfgF4WHP+WaCbNb+Bw1gmOoe3oom1xQ8ZitJnWFEEa5CQxhwpJDRl1O4qj4lvm2mHV8exrOs2SKhM76uz03vRSdGMEEAf2dEqvQlF7yxsmFYEHm+vfA7jilDaoFZfRJYrfEDxSXQwSidT0U4L8yLtDzlK0XZHvLAXmcFyUidxoJKv+Y3gnhqBH2xSHd/5PIr7dy2F2yJ/FoM2UJ1TGY033UOqS8kV0s/yiP6xxr754vix+cp/l0AAA=="
     },
     {
-      "slug": "ps26-career-studio",
-      "source": "DSC_7175.jpg",
-      "width": 4464,
-      "height": 2973,
+      "slug": "ps26-career-studio-booth",
+      "source": "Career Studio Booth.jpg",
+      "width": 2000,
+      "height": 1332,
       "ratio": 1.5015,
       "widths": [
         480,
@@ -195,7 +195,7 @@
         1600,
         1800
       ],
-      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABQBACdASoUAA0APxFysFAsJqSisAgBgCIJbACdMoBOACj/J7cYe43XR25AAP6X1cCPur+Fhpux4ILJBqaHxaBjWrzb85vFt6svHf4YpGhXXu7oH1QlXxgk1HOE3Nb6lhi7HyCRmEeKU9r5A815kOtQ3lSfbO8HRFuUrv4OvEP/EAlxHeGkhvmXoMjgAA=="
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwAwCdASoUAA0APxFysFAsJqSisAgBgCIJbACdAB6Cp84EDVxBgAD79cMiTB+0kN1xAGMqx5aS3ufqe2QdW/4/+PQY4P28J6RDDnC1MOrHHFAXT9SGT5jI+2xtebSAkzem9X0VXOCsIoPudrxqnoYH21GzVv1Z4CZcgbdi/xB0tWfiwAA="
     },
     {
       "slug": "ps26-welcome-screen",
@@ -276,21 +276,6 @@
       "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoUAA0APxFysFAsJqSisAgBgCIJZAC22fqgO7PD9tXKBw5cgogA/rHQ7/sQSheT0IvlmwLXI6BPzo8n+7w+XjaIonEvPUDwC0L5gkm/NFOrf3BrdlbrN1JURxanIEHbDSVLxnhfzc39vdUuWeCglp9m19dIAs/2+SJX8g40Lzh/hB6pGpPwEpoFrWAAAA=="
     },
     {
-      "slug": "conf24-stage-backdrop",
-      "source": "BODU5682.jpg",
-      "width": 5298,
-      "height": 3532,
-      "ratio": 1.5,
-      "widths": [
-        480,
-        800,
-        1200,
-        1600,
-        1800
-      ],
-      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAwCdASoUAA0APxFysFAsJqSisAgBgCIJYwAAUbJ9kdNz7mgA/Ge4KM40sXrIJEv50WpktyK8Qe8qgcQ72MVvNBS/dfrU8ZsccqWxqVGsxY+Q93bMaTl+P8GWp0aE9IAAAA=="
-    },
-    {
       "slug": "conf24-way-forward",
       "source": "BODU5706.jpg",
       "width": 5170,
@@ -349,21 +334,6 @@
         1800
       ],
       "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQAwCdASoUAA0APxFysFAsJqSisAgBgCIJQAAKQNXB8aaoFqrAAP7EAeBCAdT97q8/JxyJAtRAALNV+2UwFJurLmCcHFetSlGn0CIcXVmXu80Wh753z8S3nmZbC+ggKRMooEJszUdVPxcDMtSFYSW2iIb2oAomCsJsiGtwXrdYAA=="
-    },
-    {
-      "slug": "conf24-panel-session",
-      "source": "DSC_1449.jpg",
-      "width": 6016,
-      "height": 4016,
-      "ratio": 1.498,
-      "widths": [
-        480,
-        800,
-        1200,
-        1600,
-        1800
-      ],
-      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoUAA0APxFysFAsJqSisAgBgCIJZgCAAAfbjFpWl7wjKKttGAD+vJv0syrUzewp7ie4/j6msadSh26GRaj7RMsJVONrLsdyYBTGcUEuSlxfS/4qisx495kILDkYGYGDaExTOudd6NeU0W5Ug/EB9wAA"
     },
     {
       "slug": "conf24-main-stage",
@@ -471,6 +441,22 @@
         1800
       ],
       "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoUAA0APxFysFAsJqSisAgBgCIJZACdABipLDtw+MWwKYAA/pbUWE24esWSL3vy6WCBO9dFUWbYsZWmiN+xM3Iocu/1USUrSJqKhKisNOAqGuq6bViQM7aPW5KHHB+ap5iaFaFi3RtvhvxeWLKtEGKezh9EkqV+WtcQRngA"
+    }
+  ],
+  "reportwide": [
+    {
+      "slug": "report-cover-wide",
+      "source": "Impact Report Cover Wide.webp",
+      "width": 2000,
+      "height": 1125,
+      "ratio": 1.7778,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600
+      ],
+      "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZABUfoeiS121IUGQIPRAAP0C6zdzsR8AAowNw1vEzjlFGbLdu7P0cA/bR84ir06gTszfvYxI12ADgjuoMmVovaKh9n9/MciOs0T75HAhM+EuoLBgjf7y2YH01QXSPeoVwAAA"
     }
   ],
   "website": [
@@ -592,44 +578,6 @@
       "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACQBQCdASoUABkAPxF+tlWsJ6SjKAgBgCIJQBjV0GdEz/gHlpSvDZUE8Txrpy1Ex5Tjy4D/AAD+53vzgOKq79jaADXyNUY3be/0eaSSWfxYDsipBdkMb6AADMfZu9FMTw1lcGViZUKD1Lgizzghh8XVTU4ux2FfAM8CzuBpInNya9H9dbKWnBdaqkIGn99cAB8BFg1g5dayFEuOIbJRifla+W9hKlgWJR9G1oXLlOZgYi+ajQAAAA=="
     },
     {
-      "slug": "wt-pitchher",
-      "source": "PitchHer2.jpg",
-      "width": 2160,
-      "height": 2160,
-      "ratio": 1,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACwBACdASoUABQAPxF8slQsJ6QjKAqpgCIJQAAFVkqElrtza5ykZ28JR1RWJ5wAAP3Vu5NqejazRXsjOIIEfsJj6k9tEu6hSSGyerSzKnYzFf/PrmUcspSjmx2bNMSA9BeF+ISSe2/zwIojjhb4Ww2qdf5cTB2lxAU3QxwBm72gG8G+9U4jzT+nVMDYSzm8d9gUixkWeR4vv353rWi2SrnQAAAAAA=="
-    },
-    {
-      "slug": "wt-bhm",
-      "source": "BHM 2026.png",
-      "width": 1080,
-      "height": 1350,
-      "ratio": 0.8,
-      "widths": [
-        480,
-        800
-      ],
-      "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAAAQBQCdASoUABkAPxF8s1QsJ6QjKAqpgCIJQBkagfhQDDN/yPism3EQsqQB1wIocjYAAN+80FT0hjXpGVDdG5DVPPxh/iJfDrj8f7iXM/BsMH2oz3DDIBAbBtkluk3d8/LGK7vRzUfbnBUEbATg0SEJh9bGxpRaVT2jzX4s7/iQB9SsbQNKo5q3X1ngLPQFFdr/rVqb/+Fx+cXEEQ37P37EA3/eeWnjIWfw+KhmekAAAA=="
-    },
-    {
-      "slug": "wt-wcw",
-      "source": "WCW.png",
-      "width": 4320,
-      "height": 5400,
-      "ratio": 0.8,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBQCdASoUABkAPxF8s1QsJ6QjKAqpgCIJbACxHoSBSdA0hWom8ZdxdgPJBZajcG3WkEogAP6bEhgE/mUbtkFsNZc/VGEOsQAuuMRv7UvA+9mm4D1vuRLokHNfSuuahmdPul4IubumnpQiVpjcu+QqPKPr8n0UgrGcNbzOE2odQDXRRz92gcPS+tu1bEOKBwIR6WZkPnzlHWvCDNxsdklTCi4vnj9XOlqmmw8SgCRzoAAA"
-    },
-    {
       "slug": "wt-townhall",
       "source": "TH 2.png",
       "width": 2160,
@@ -641,34 +589,6 @@
         1200
       ],
       "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAQBQCdASoUABkAPxGAt1WsJ6UjKAgBgCIJZADE2YtebysUNj6EVE5r3+fa0B86GfrkAP7gqQh5sPp7X+xIzQEpd0mTn3G3dNcnhkBFn7XNW/Y45wnJUsY7bBcVv1m3AlDC4eYSGmx6tfG14K7IR7ewNiSyNae3r74RjJnOGnqEYfELa+Yl60Od/Pp75i9mpV/10FDNekVqJcDamalZrs//zpjmM0HUdIo4gAPvWrAVCf2pb+byZ3EoV3wEddFKZsAAAA=="
-    },
-    {
-      "slug": "wt-storytelling",
-      "source": "Success Design 2.png",
-      "width": 1080,
-      "height": 1350,
-      "ratio": 0.8,
-      "widths": [
-        480,
-        800
-      ],
-      "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoUABkAPxF8slIsKCSisBgIAYAiCWYAvkgywx0bNGVn7Hfy0WEMXxj33AAA/uro7SB1jvrW7Lg58Z1Bu2V4L7BFcXTAVry4jyxiUzlcnAixjpvTf2fmkAflQpy5GHL6FuYANgf8L3TjhdtJH23pxy1bi3v+wd8EREwfe5s8eNJm037PEvmn73RnXOeIPtbHSQ9trg0gAAA="
-    }
-  ],
-  "reportwide": [
-    {
-      "slug": "report-cover-wide",
-      "source": "Impact Report Cover Wide.webp",
-      "width": 2000,
-      "height": 1125,
-      "ratio": 1.7778,
-      "widths": [
-        480,
-        800,
-        1200,
-        1600
-      ],
-      "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZABUfoeiS121IUGQIPRAAP0C6zdzsR8AAowNw1vEzjlFGbLdu7P0cA/bR84ir06gTszfvYxI12ADgjuoMmVovaKh9n9/MciOs0T75HAhM+EuoLBgjf7y2YH01QXSPeoVwAAA"
     }
   ]
 }

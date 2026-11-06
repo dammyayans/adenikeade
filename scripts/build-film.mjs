@@ -14,10 +14,11 @@
 // and re-run — POSTER_W will widen on its own and the cap in Film.tsx can go.
 import { execFileSync } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import ffmpeg from 'ffmpeg-static';
 import sharp from 'sharp';
+import { FORMATS } from './assets.manifest.mjs';
 
 const OUT = 'public/media/film';
 const TMP = 'scratch/film';
@@ -37,7 +38,27 @@ const FILMS = [
     // at thumbnail size — which is the only job a poster has.
     posterAt: 2.0,
   },
+  {
+    slug: 'ps26-recap',
+    src: 'raw/Adenike Adedokun - Brand Design/Event Branding/Power Shift 2026/Power Shift 2026 Film.mp4',
+    // The whole recap, 1276×718. It already ends on the wordmark, with no end card.
+    in: 0,
+    out: 90.09,
+    // The speaker gesturing at the sign: the full wordmark, clear of the play button.
+    posterAt: 87.1,
+    // About 820 kb/s against the source's 1350, for a player capped at 760px.
+    // crf 25 saved almost nothing on this source; 32 starts to block in the crowd.
+    crf: 30,
+  },
 ];
+
+// Builds every film by default; pass a slug to build just that one and leave the
+// others' files and manifest entries alone: node scripts/build-film.mjs ps26-recap
+const only = process.argv[2];
+if (only && !FILMS.some((f) => f.slug === only)) {
+  console.error(`Unknown film "${only}". Known: ${FILMS.map((f) => f.slug).join(', ')}`);
+  process.exit(1);
+}
 
 // crf 25 lands around 520 kb/s — comfortably above the source's own 330 kb/s, so
 // the re-encode is not the thing you see, without spending megabytes preserving
@@ -50,10 +71,14 @@ const FADE = 0.5;
 
 const run = (args) => execFileSync(ffmpeg, ['-y', '-hide_banner', '-loglevel', 'error', ...args]);
 mkdirSync(OUT, { recursive: true });
+mkdirSync(TMP, { recursive: true });
 
-const out = { film: [] };
+const out = only
+  ? JSON.parse(await readFile('src/media.film.json', 'utf8'))
+  : { film: [] };
 
 for (const film of FILMS) {
+  if (only && film.slug !== only) continue;
   const dur = +(film.out - film.in).toFixed(3);
   const mp4 = path.join(OUT, `${film.slug}.mp4`);
 
@@ -65,7 +90,7 @@ for (const film of FILMS) {
     '-ss', String(film.in), '-t', String(dur), '-i', film.src,
     '-vf', `fade=t=in:st=0:d=${FADE},fade=t=out:st=${(dur - FADE).toFixed(3)}:d=${FADE}`,
     '-af', `afade=t=in:st=0:d=${FADE},afade=t=out:st=${(dur - FADE).toFixed(3)}:d=${FADE}`,
-    '-c:v', 'libx264', '-crf', String(CRF), '-preset', 'slow',
+    '-c:v', 'libx264', '-crf', String(film.crf ?? CRF), '-preset', 'slow',
     '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.0',
     '-c:a', 'aac', '-b:a', '96k', '-ac', '2',
     '-movflags', '+faststart',
@@ -84,7 +109,7 @@ for (const film of FILMS) {
   else if (widths[widths.length - 1] !== meta.width) widths.push(meta.width);
 
   for (const w of widths) {
-    for (const [fmt, opts] of [['avif', { quality: 52, effort: 6 }], ['webp', { quality: 78 }]]) {
+    for (const [fmt, opts] of FORMATS) {
       await sharp(still)
         .resize(w, null, { withoutEnlargement: true })
         [fmt](opts)
@@ -94,6 +119,7 @@ for (const film of FILMS) {
 
   const lqip = await sharp(still).resize(20).webp({ quality: 30 }).toBuffer();
 
+  out.film = out.film.filter((f) => f.slug !== `${film.slug}-poster`);
   out.film.push({
     slug: `${film.slug}-poster`,
     source: film.src,

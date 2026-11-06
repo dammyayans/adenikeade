@@ -213,12 +213,6 @@ export const caseStudies: CaseStudy[] = [
             ],
           },
           {
-            kind: "text",
-            body: [
-              "The photo walls do the quietest work and travel the furthest: each one is a place to stand, and every photograph taken there carries the identity out of the building.",
-            ],
-          },
-          {
             kind: "grid",
             cols: 3,
             ratio: "2 / 3",
@@ -247,7 +241,7 @@ export const caseStudies: CaseStudy[] = [
             items: [
               {
                 set: "powershift26",
-                slug: "ps26-career-studio",
+                slug: "ps26-career-studio-booth",
                 caption: "The Wetech Career Studio.",
               },
               {
@@ -261,6 +255,14 @@ export const caseStudies: CaseStudy[] = [
                 caption: "The Power Shift tees, on the exhibition floor.",
               },
             ],
+          },
+          {
+            kind: "film",
+            slug: "ps26-recap",
+            poster: "ps26-recap-poster",
+            caption:
+              "The day in a minute and a half — arrivals, the full hall, the exhibition floor, the PitchHer final, the word wall, and The Power Shift sign outside.",
+            credit: "Film: Wetech. Identity and event branding: Adenike Adedokun.",
           },
         ],
       },
@@ -282,7 +284,6 @@ export const caseStudies: CaseStudy[] = [
                 v: "Women Leading the Future of AI, Capital & Innovation",
               },
             ],
-            note: "Attendance figure is Wetech’s own projection, published in the 2025 Impact Report.",
           },
         ],
       },
@@ -640,10 +641,11 @@ export const caseStudies: CaseStudy[] = [
             ],
           },
           {
-            kind: "text",
-            body: [
-              "Partner marks — Flutterwave, Microsoft, Interswitch — sit immediately under the fold rather than in a footer, because for this audience the proof is the reason to keep scrolling.",
-            ],
+            kind: "link",
+            href: "https://wetech.africa/",
+            label: "The site itself",
+            title: "Visit the website",
+            note: "wetech.africa",
           },
         ],
       },
@@ -705,10 +707,11 @@ export const caseStudies: CaseStudy[] = [
             ],
           },
           {
-            kind: "text",
-            body: [
-              "The editorial cards are one template with three variables — a black-and-white portrait, a two-line claim, and a byline. Consistency at that scale is not a style decision, it is what makes a hundred posts read as one publication.",
-            ],
+            kind: "link",
+            href: "https://www.instagram.com/wetechofficial",
+            label: "The feed itself",
+            title: "See Wetech on Instagram",
+            note: "@wetechofficial",
           },
         ],
       },
