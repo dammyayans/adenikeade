@@ -66,6 +66,158 @@
       "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoUABkAPxFws1MsJaSisBgIAYAiCUAZQAI/tRPfBnOQx56rWHOYil+isbT9wAD+0fgzuQ69ikI1OR1gyfCnx6NFwOaE+v1eKCQx1UR+fWCWPY91zVO+an+gHxyBbfU2V5h+WpOA7+b0BThwEM6wd+yzL/ILurEAhOZBUXcKYg5O5NFU1q0cHE0t+w5c8xH225Kv33r3cUuNBmf6VjaEkj0Fv/tRpq63Z9grU0hZc5CJ9Oa4AAA="
     }
   ],
+  "powershift26": [
+    {
+      "slug": "ps26-hall",
+      "source": "DSC_7802.jpg",
+      "width": 4454,
+      "height": 2967,
+      "ratio": 1.5012,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoUAA0APxFysFAsJqSisAgBgCIJQBdgAifGMimG5HdLIAD+2sqBGOGjCXhPD4UHNKnp+bp1cGxJxr+PeN800VPCedzWTZlrIA+VPtCdUJJsUDW6irENNJocWsi6BXEZ9fgXtZp/NQiAAA=="
+    },
+    {
+      "slug": "ps26-main-stage",
+      "source": "BODU7164.jpg",
+      "width": 5472,
+      "height": 3648,
+      "ratio": 1.5,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAA0APxFysFAsJqSisAgBgCIJYgCsEf/gQFii1kvZL04EgAD+6TiMJ7B2iCJyhcCGyMEn/gskGdL6GVko9H+nuo8nQqPOFnk/jsRNZ/Jyh5BxDCsH+z4zxforb/MeY5+NmpdufV7ggKoYLfJZAkR3pKRsAA=="
+    },
+    {
+      "slug": "ps26-founder-panel",
+      "source": "DSC_7820.jpg",
+      "width": 4528,
+      "height": 3016,
+      "ratio": 1.5013,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoUAA0APxFysFAsJqSisAgBgCIJagC06B6GSBXyf/sO/wAA/u6hig5viPXIvuFj75l8tKHLN/YFmeBFLUlrhgZQMgN6C1c8qraa+qB5bpvkMLzGUocXuP6HJZkGC8JiAAA="
+    },
+    {
+      "slug": "ps26-community-spotlight",
+      "source": "DSC_7296.jpg",
+      "width": 4528,
+      "height": 3016,
+      "ratio": 1.5013,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoUAA0APxFysFAsJqSisAgBgCIJYgCo9CHwCVRdYTbLUAAA/u7Z40Sot0FbvjH4K93LTqxPfUlYRfipRPnBKPT06vs//e97O9dCF/xMqVyDAIwHDMDAiUmoGExEV+q/udfhF1dU0Pte14szQzkLAGBEMEuf3XAC56iRAAAA"
+    },
+    {
+      "slug": "ps26-find-your-word",
+      "source": "BODU6793.jpg",
+      "width": 3648,
+      "height": 5472,
+      "ratio": 0.6667,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBQCdASoUAB4APxFyslKsJiSisBgIAYAiCWwAsR6EhlAVBOrAnsrwFun5y0wwh/yXFRn15wAA/vDLQmB1SpN5qkAJgy62gJYvAVlMMjEpRCdblErlwQfJAV5VaEjtL4yYh6DXEJmNphJZpsiZzS/7jgrShFh74gxZYAgYqYdhPMZsAM81GeXOVmgQGRco0UzQaYHeaO8YHEzswEOohWRpwUszy3zDYAAAAA=="
+    },
+    {
+      "slug": "ps26-wall-shaping",
+      "source": "DSC_7027.jpg",
+      "width": 3016,
+      "height": 4528,
+      "ratio": 0.6661,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABQBQCdASoUAB4APxF6t1MsJ6WiqAqpgCIJbACdMtDBsw6JHYz6DdD4avXA2ezHdMbTasAAyhXvFHoLscAo1rIhr4eWsPQjLe48xhrJtv7EDcR62efMnC+XOA2rKsDMk76LUs7t/P4v2rW0zYrCHU0whfGP8LPkPH2LDBqp5Qu5AoTRFEvYrf8fRtcVFjciCueA39bMJIOsZ1UMMo44Pm5QjCRFD1hRQiwIGnzJrrzx33EG3rlDdQV9Bo7nAAAA"
+    },
+    {
+      "slug": "ps26-wall-building",
+      "source": "DSC_7032.jpg",
+      "width": 3016,
+      "height": 4528,
+      "ratio": 0.6661,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAADwBQCdASoUAB4APxFwsFAsJiSisAgBgCIJbACdMoM2/JXz/4DYeXI/YgOOk1DhPaZP7cX2emsVsAD+jd+DaoEbPfgF4WHP+WaCbNb+Bw1gmOoe3oom1xQ8ZitJnWFEEa5CQxhwpJDRl1O4qj4lvm2mHV8exrOs2SKhM76uz03vRSdGMEEAf2dEqvQlF7yxsmFYEHm+vfA7jilDaoFZfRJYrfEDxSXQwSidT0U4L8yLtDzlK0XZHvLAXmcFyUidxoJKv+Y3gnhqBH2xSHd/5PIr7dy2F2yJ/FoM2UJ1TGY033UOqS8kV0s/yiP6xxr754vix+cp/l0AAA=="
+    },
+    {
+      "slug": "ps26-career-studio",
+      "source": "DSC_7175.jpg",
+      "width": 4464,
+      "height": 2973,
+      "ratio": 1.5015,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABQBACdASoUAA0APxFysFAsJqSisAgBgCIJbACdMoBOACj/J7cYe43XR25AAP6X1cCPur+Fhpux4ILJBqaHxaBjWrzb85vFt6svHf4YpGhXXu7oH1QlXxgk1HOE3Nb6lhi7HyCRmEeKU9r5A815kOtQ3lSfbO8HRFuUrv4OvEP/EAlxHeGkhvmXoMjgAA=="
+    },
+    {
+      "slug": "ps26-welcome-screen",
+      "source": "BODU7449.jpg",
+      "width": 5472,
+      "height": 3648,
+      "ratio": 1.5,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoUAA0APxFysFAsJqSisAgBgCIJbAC7MoADdv3dzzxNtJu94u2RAAD+7z6L0dxF3Nma7/p2KCMU46frVKdfVCL1p+OR0X2UFQyXVAlYPVYzpYYt0qxV1js2MWOASUIc6WsFv/R/t1AAm9tXOQCdGyTkuARvsiGWpbfgIPQBeaYoELUXErEAAA=="
+    },
+    {
+      "slug": "ps26-crew-tees",
+      "source": "DSC_7417.jpg",
+      "width": 4528,
+      "height": 3016,
+      "ratio": 1.5013,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        1800
+      ],
+      "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoUAA0APxFysFAsJqSisAgBgCIJYgDCkf/gOnEugon0luIwAP7dQFDoIRYrgcOZWtqVGovUTzgM6XG+gIlsLkVITyHD4w6x8ZUe2pzDgxgBh86PG+S2sLky6LJUBYfAAp0jvpLqrqsHYNx55P+GZ2J30t85ZcZq8AA="
+    }
+  ],
   "eventsite": [
     {
       "slug": "event-site-hero",
@@ -365,125 +517,6 @@
       "lqip": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAABQBQCdASoUACoAPxF6tFOsJySiqqgBgCIJYgC06BZJyiYwB1ID2zbYGem2Oy5c+YOczAAA/uqE455FG9C5K/bVgarjsmTw0TGkCv+Lxwn19EuELfMPN1ThArhak0u/OUPN0+1IuyjbnxTjwtUPdh8rEuQKAroC693AD/47F1Xh0lbefsdyNlZjoe3VogSuAliy/4NZvgL6Eaa161+LWS3qANBQRO+q6xAFfhWU2Bmd4QHt6nJf3k9v+mo3jgSBvfk+1p65eOOqmOyoH540VvRy4DV0e56GmCcGPDYyR6DJ9M1HAAA="
     }
   ],
-  "interswitch": [
-    {
-      "slug": "isw-cybersecurity-kv",
-      "source": "Cybersecurity Month KV.jpg",
-      "width": 3241,
-      "height": 3871,
-      "ratio": 0.8373,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASoUABgAPxF6r1MsJ6OkKA1RgCIJbACdMtB7KBFa1QxBjvVS8QDBTw2gtAAA/uy+/LrSjnfixU4BDW2t/L04IGneVTg4XQv8phSBkCuXQ2Aj11NVfKJGLzXggSFQGPC+Iz3qC5KJy5wpTDjYLDIJk2PisqAFuRp7fKQQCwAA"
-    },
-    {
-      "slug": "isw-demo-day-a",
-      "source": "ISW Project Demo.png",
-      "width": 2480,
-      "height": 2972,
-      "ratio": 0.8345,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoUABgAPxF0sFAsJySisAgBgCIJaAC7L8CB1Xn84Obs/QBzrFjPgAD+6fXNu/HH8zfBntCshaHRI9tAAb9DOjm1oRtekukEbjMJBv/5FpZGvO0tHySLS78uPUG0F8ZCKACFxHEya+XT6bgAaSveSZGDMoo8Zswt/2uxCAAA"
-    },
-    {
-      "slug": "isw-demo-day-b",
-      "source": "ISW Demo Day 3.png",
-      "width": 2480,
-      "height": 3256,
-      "ratio": 0.7617,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBACdASoUABoAPxF0rVCsJqQisBgMAYAiCUAWnQHhU+u2DYeWtYZKz2yAAAD+7qFYFT5Fo8wdnxfxFLCz8wkdAPQeCXwdVvJcBCRYUfz+aRSoj/IiRqTp1PYUYRlTafLvcGwzBO4NUIX8wCMVjY7x2ZZeAAAA"
-    },
-    {
-      "slug": "isw-labs-enter",
-      "source": "Enter our Interswitch Labs.jpg",
-      "width": 1787,
-      "height": 2405,
-      "ratio": 0.743,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBQCdASoUABsAPxF0r1AsJyQisAgBgCIJbADCr5CkGD/Z/8CgZ/23//9Fb/Lr69rAAP7vCQ1E1FajqCj/bvhomY1YKyrb8E7Ot0qUSOeDZwoC0BXRnFmqBLjwBtcyt9MVFVyK0PSkBKue1sEhw2KcceoYiuWp7vsexUM6VXzkallHt0ADaiX5jsUOW07olDgbUpSwzjZcKZeooBXFaJZNO1VIAAAA"
-    },
-    {
-      "slug": "isw-labs-welcome",
-      "source": "Welcome to Interswitch Labs.jpg",
-      "width": 1786,
-      "height": 2139,
-      "ratio": 0.835,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwBACdASoUABgAPxF4sVIsJySiqA1RgCIJZACdMswBqZ1Te1+Ms7oVYpaDz+GvuAAA/ulIrJgQuiBwnbQJS9wc5/0Z9MU67KdqmJso03li3P1YTygMYA6vJo+QTM8ACzwDInydcRqpjpAhQ3HMdEVHPjH+v5RbO4ydisT3+KeyqwYe6X9QrvdtH3BJvQnw8Vlss4tQQAA="
-    },
-    {
-      "slug": "isw-ember-season",
-      "source": "Staying Vigilant this Ember Season.jpg",
-      "width": 2480,
-      "height": 4086,
-      "ratio": 0.607,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBQCdASoUACEAPxGAuFYsJ6UjpWmZgCIJQBkagW1IHbPwDNWYF9y42z3+0734wm4rIAD+6fXLslwAaYUSRZk7x0An3gy1O+hXI0kMnn9ojZbVTwOO7TmC0b4Ag42xzTAheSrc+H79nxWs08uEFFc6t/AAAA=="
-    },
-    {
-      "slug": "isw-teamwork",
-      "source": "Teamwork makes the mission secure.jpg",
-      "width": 2480,
-      "height": 3094,
-      "ratio": 0.8016,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoUABkAPxF8tFOsJ6SiqAqpgCIJQBig4AAdsnr6iz9Q0CDJsgD92pOfEAM5hLvmUcELdqr45mS38GI91MFz/2/WirGEI5x8fkKT7kwoG0KSDBbtnlyTTQUi9ttNyuTAAAA="
-    },
-    {
-      "slug": "isw-digest-december",
-      "source": "Compliance Digest - December 2.jpg",
-      "width": 2480,
-      "height": 3965,
-      "ratio": 0.6255,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACQBQCdASoUACAAPxF0s1KsJiSisBgIAYAiCWwArDMYBStJ8x+90KG/BsX85SEAgPQteoHwIAD+8XQz2o6N+yEV1sriXo8bvyBItUQH9OXQdr29/VG2q5vOSHh8YvdvKVaXTmJOqMLQn4bjaLYAgVW9U8oeiFOoTZpXj1z1gmrO3F0+379H7YodgEQU4oji55LFcWToJcnyNuveoVbiUo1HgV0UjOLY+E57ik6wAHMAALGk+QU1SaHnRFmK9cqTGQHRYyO96MoZQJF7YAAAAA=="
-    },
-    {
-      "slug": "isw-digest-october",
-      "source": "Compliance Digest - October.jpg",
-      "width": 2480,
-      "height": 4789,
-      "ratio": 0.5179,
-      "widths": [
-        480,
-        800,
-        1200
-      ],
-      "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADQBQCdASoUACcAPxF4s1KsJySiqqoBgCIJQBlAAs5mW7q8tu3tI3H5bd6RJQqbfLTCVG9oh7XAAP6zsGOChyjfBwytYA79pJbHpGHThepynL0jaCaHG8YsLp+UITTQO/a6rdqT4ngyps1XTBFHDsgnQVblu+9VjkEwvH2Y8wSpuOFvgD/teNXbHMTVuNiFDuCnddm4PC8dy8TaXnXrW94DAIX9dRaMpVrEx3xl1o1krAw6LNkQAAAA"
-    }
-  ],
   "campaign": [
     {
       "slug": "wt-editorial-ecosystem",
@@ -610,6 +643,22 @@
         800
       ],
       "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoUABkAPxF8slIsKCSisBgIAYAiCWYAvkgywx0bNGVn7Hfy0WEMXxj33AAA/uro7SB1jvrW7Lg58Z1Bu2V4L7BFcXTAVry4jyxiUzlcnAixjpvTf2fmkAflQpy5GHL6FuYANgf8L3TjhdtJH23pxy1bi3v+wd8EREwfe5s8eNJm037PEvmn73RnXOeIPtbHSQ9trg0gAAA="
+    }
+  ],
+  "reportwide": [
+    {
+      "slug": "report-cover-wide",
+      "source": "Impact Report Cover Wide.webp",
+      "width": 2000,
+      "height": 1125,
+      "ratio": 1.7778,
+      "widths": [
+        480,
+        800,
+        1200,
+        1600
+      ],
+      "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZABUfoeiS121IUGQIPRAAP0C6zdzsR8AAowNw1vEzjlFGbLdu7P0cA/bR84ir06gTszfvYxI12ADgjuoMmVovaKh9n9/MciOs0T75HAhM+EuoLBgjf7y2YH01QXSPeoVwAAA"
     }
   ]
 }

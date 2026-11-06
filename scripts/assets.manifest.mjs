@@ -16,6 +16,24 @@ export const SETS = {
     ],
   },
 
+  // 01c — The Power Shift, 26 September 2026 · the event itself
+  powershift26: {
+    dir: 'Event Branding/Power Shift 2026',
+    w: 1800,
+    files: [
+      ['DSC_7802.jpg', 'ps26-hall'],
+      ['BODU7164.jpg', 'ps26-main-stage'],
+      ['DSC_7820.jpg', 'ps26-founder-panel'],
+      ['DSC_7296.jpg', 'ps26-community-spotlight'],
+      ['BODU6793.jpg', 'ps26-find-your-word'],
+      ['DSC_7027.jpg', 'ps26-wall-shaping'],
+      ['DSC_7032.jpg', 'ps26-wall-building'],
+      ['DSC_7175.jpg', 'ps26-career-studio'],
+      ['BODU7449.jpg', 'ps26-welcome-screen'],
+      ['DSC_7417.jpg', 'ps26-crew-tees'],
+    ],
+  },
+
   // 01b — event.wetech.africa · the live event site she designed
   eventsite: {
     dir: 'Event Website',
@@ -54,6 +72,14 @@ export const SETS = {
     ],
   },
 
+  // 02b — Impact Report · the landscape cover used on the work card. The rest of
+  // the report set is rendered from the PDF by build-pdf.mjs.
+  reportwide: {
+    dir: 'Presentation Decks & Reports',
+    w: 1600,
+    files: [['Impact Report Cover Wide.webp', 'report-cover-wide']],
+  },
+
   // 03 — wetech.africa redesign
   website: {
     dir: 'Website Design',
@@ -63,23 +89,6 @@ export const SETS = {
       ['About.png',        'web-about'],
       ['Programs.png',     'web-programs'],
       ['Media.png',        'web-media'],
-    ],
-  },
-
-  // 04 — Interswitch internal communications
-  interswitch: {
-    dir: 'Flyers',
-    w: 1200,
-    files: [
-      ['Cybersecurity Month KV.jpg',            'isw-cybersecurity-kv'],
-      ['ISW Project Demo.png',                  'isw-demo-day-a'],
-      ['ISW Demo Day 3.png',                    'isw-demo-day-b'],
-      ['Enter our Interswitch Labs.jpg',        'isw-labs-enter'],
-      ['Welcome to Interswitch Labs.jpg',       'isw-labs-welcome'],
-      ['Staying Vigilant this Ember Season.jpg','isw-ember-season'],
-      ['Teamwork makes the mission secure.jpg', 'isw-teamwork'],
-      ['Compliance Digest - December 2.jpg',    'isw-digest-december'],
-      ['Compliance Digest - October.jpg',       'isw-digest-october'],
     ],
   },
 

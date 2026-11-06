@@ -4,14 +4,9 @@
  *
  *  Sits at z-20 — the bands cross in FRONT of the pinned film, which is what makes
  *  her read as being on the page rather than pasted over it. */
-const WORDS = [
-  'Brand identity',
-  'Event worlds',
-  'Campaign at volume',
-  'Art direction',
-  'Report systems',
-  'Multidisciplinary',
-];
+import { site } from '../data/site';
+
+const WORDS = site.disciplines;
 
 function Track({ reverse }: { reverse?: boolean }) {
   // The list is laid down twice so the -50% loop meets its own start exactly.

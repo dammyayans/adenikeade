@@ -28,12 +28,12 @@ const EASE = 0.16;
  *  first thing anyone sees sharp. */
 const REST = 0.02;
 
-/** On a phone she stands under the copy, not in front of it: she is scaled to the
+/** Below desktop she stands under the copy, not in front of it: she is scaled to the
  *  height left below #hero-copy-end, with this much air above her hair, and never
  *  smaller than FIT_MIN of her full size. */
 const FIT_GAP = 12;
 const FIT_MIN = 0.6;
-const NARROW = '(max-width: 809px)';
+const NARROW = '(max-width: 1199px)';
 
 /** 0→1 with the ends flattened, so she doesn't start or stop leaving abruptly. */
 const smooth = (t: number) => t * t * (3 - 2 * t);

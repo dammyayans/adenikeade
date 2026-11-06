@@ -1,4 +1,4 @@
-import { site, about, contactLinks, archive } from "./site";
+import { site, about, contactLinks, experience } from "./site";
 import { caseStudies } from "./caseStudies";
 import { ORIGIN, type PageMeta } from "./meta";
 
@@ -22,8 +22,15 @@ const person = {
     addressLocality: "Lagos",
     addressCountry: "NG",
   },
-  knowsAbout: [...about.services, ...site.disciplines],
-  worksFor: { "@type": "Organization", name: archive[0].org },
+  // The two lists overlap in all but capitalisation ("Event Branding").
+  knowsAbout: [
+    ...new Map(
+      [...about.expertise, ...site.disciplines].map(
+        (s) => [s.toLowerCase(), s] as const,
+      ),
+    ).values(),
+  ],
+  worksFor: { "@type": "Organization", name: experience[0].org },
   alumniOf: { "@type": "CollegeOrUniversity", name: "University of Ilorin" },
   sameAs: contactLinks
     .filter((l) => l.href.startsWith("http"))

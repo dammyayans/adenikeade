@@ -32,43 +32,46 @@ export function BlockView({ block }: { block: Block }) {
         </div>
       );
 
-    // Where the block names an `href` the plate itself is the link, so the
-    // whole image is the target rather than a word tucked under it.
+    // Where the block names an `href` the whole figure is one link: the plate
+    // and its caption share a single target. The caption then names the link,
+    // so the image goes empty-alt to avoid being announced twice.
     case 'full': {
-      const plate = (
-        <div
-          className="overflow-hidden rounded-[2px] bg-[var(--color-taupe)]"
-          style={{ aspectRatio: block.ratio ?? '3 / 2' }}
-        >
-          <Picture
-            set={block.set}
-            slug={block.slug}
-            alt={block.caption}
-            sizes="(min-width: 1200px) 92vw, 94vw"
-            className={`h-full w-full object-cover ${block.anchor === 'top' ? 'object-top' : 'object-center'}`}
-          />
-        </div>
+      const figure = (
+        <figure className="m-0">
+          <div
+            className="overflow-hidden rounded-[2px] bg-[var(--color-taupe)]"
+            style={{ aspectRatio: block.ratio ?? '3 / 2' }}
+          >
+            <Picture
+              set={block.set}
+              slug={block.slug}
+              alt={block.href ? '' : block.caption}
+              sizes="(min-width: 1200px) 92vw, 94vw"
+              className={`h-full w-full object-cover ${block.anchor === 'top' ? 'object-top' : 'object-center'}`}
+            />
+          </div>
+          <figcaption
+            className={`caption mt-3 max-w-[64ch] opacity-60 ${block.href ? 'underline underline-offset-2' : ''}`}
+          >
+            {block.caption}
+          </figcaption>
+        </figure>
       );
 
       return (
         <div ref={ref} className={cls}>
-          <figure className="m-0">
-            {block.href ? (
-              <a
-                href={block.href}
-                target="_blank"
-                rel="noreferrer"
-                className="block no-underline transition-opacity duration-[var(--dur-base)] hover:opacity-85"
-              >
-                {plate}
-              </a>
-            ) : (
-              plate
-            )}
-            <figcaption className="caption mt-3 max-w-[64ch] opacity-60">
-              {block.caption}
-            </figcaption>
-          </figure>
+          {block.href ? (
+            <a
+              href={block.href}
+              target="_blank"
+              rel="noreferrer"
+              className="block no-underline transition-opacity duration-[var(--dur-base)] hover:opacity-85"
+            >
+              {figure}
+            </a>
+          ) : (
+            figure
+          )}
         </div>
       );
     }
@@ -122,6 +125,36 @@ export function BlockView({ block }: { block: Block }) {
               <p className="mt-6 mb-0 max-w-[52ch] text-[15px] leading-[1.5] opacity-70">{block.note}</p>
             )}
           </blockquote>
+        </div>
+      );
+
+    case 'link':
+      return (
+        <div ref={ref} className={cls}>
+          <a
+            href={block.href}
+            target="_blank"
+            rel="noreferrer"
+            className="group block border-y border-current/25 py-7 no-underline transition-colors duration-[var(--dur-base)] hover:border-current/50"
+          >
+            <p className="label m-0 mb-4 opacity-60">{block.label}</p>
+            <span className="flex flex-wrap items-center gap-x-4 gap-y-3">
+              <span className="font-display text-[clamp(24px,3.6vw,44px)] font-bold leading-none tracking-[-0.035em]">
+                {block.title}
+              </span>
+              <span
+                aria-hidden="true"
+                className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-current transition-transform duration-[var(--dur-base)] ease-[var(--ease-spring)] group-hover:translate-x-1"
+              >
+                →
+              </span>
+              {block.note && (
+                <span className="label rounded-full border border-current/45 px-3 py-1.5 opacity-80 md:ml-auto">
+                  {block.note}
+                </span>
+              )}
+            </span>
+          </a>
         </div>
       );
 

@@ -206,7 +206,9 @@ for (const stale of await readdir(OUT).catch(() => [])) {
 const jobs = [
   {
     name: 'home.jpg',
-    eyebrow: site.disciplines.join(' · '),
+    // Two is what fits: this line is drawn, not wrapped, and a third runs through
+    // the seam and over the portrait.
+    eyebrow: site.disciplines.slice(0, 2).join(' · '),
     title: `${site.name} — ${site.role.toLowerCase()}`,
     // The headline is already her name, so the rule underneath carries what the
     // headline does not: what she does, and where.

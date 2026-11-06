@@ -25,15 +25,15 @@ export function About() {
 
           <div className="flex flex-col gap-8">
             <div>
-              <p className="label m-0 mb-3.5 opacity-55">Services</p>
+              <p className="label m-0 mb-3.5 opacity-55">Expertise</p>
               <ul className="m-0 list-none p-0">
-                {about.services.map((s) => (
+                {about.expertise.map((s) => (
                   <li key={s} className="border-b border-current/12 py-2.5 text-[15px] last:border-0">{s}</li>
                 ))}
               </ul>
             </div>
             <div>
-              <p className="label m-0 mb-3.5 opacity-55">Tools</p>
+              <p className="label m-0 mb-3.5 opacity-55">Tools I work with</p>
               <p className="m-0 text-[15px] opacity-70">{about.tools.join(' · ')}</p>
             </div>
           </div>

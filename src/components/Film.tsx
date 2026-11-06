@@ -89,7 +89,7 @@ export function Film({ slug, poster, caption, credit, ratio = '16 / 9' }: Props)
           )}
         </div>
 
-        <figcaption className="caption mt-3 max-w-[64ch] opacity-60">
+        <figcaption className="caption mt-3 opacity-60">
           {caption}
           {credit && <span className="block opacity-80">{credit}</span>}
         </figcaption>

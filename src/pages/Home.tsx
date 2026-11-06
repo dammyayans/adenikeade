@@ -3,7 +3,6 @@ import { HeroStage } from '../components/HeroStage';
 import { Proof } from '../components/Proof';
 import { Tape } from '../components/Tape';
 import { Work } from '../components/Work';
-import { Statement } from '../components/Statement';
 import { About } from '../components/About';
 import { Archive } from '../components/Archive';
 import { Stripe } from '../components/Stripe';
@@ -22,8 +21,6 @@ export default function Home() {
       </HeroStage>
       <Stripe />
       <Work />
-      <Stripe />
-      <Statement />
       <Stripe />
       <About />
       <Stripe />

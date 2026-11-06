@@ -5,7 +5,19 @@ export const EMAIL = "islamiahadedokun@gmail.com";
 export const site = {
   name: "Adenike Adedokun",
   role: "Brand designer",
-  disciplines: ["Identity", "Event worlds", "Campaign at volume"],
+  tagline:
+    "Brand designer creating identities and experiences that make an impact.",
+  intro:
+    "From brand identities to digital campaigns, websites and live experiences, I bring ideas to life across every touchpoint.",
+  /** Also the marquee, and the `knowsAbout` list in the structured data. */
+  disciplines: [
+    "Brand identity",
+    "Campaign systems",
+    "Event branding",
+    "Digital design",
+    "Art direction",
+    "Brand communications",
+  ],
   location: "Lagos, Nigeria",
   timeZone: "Africa/Lagos",
   domain: "adenikeade.com",
@@ -18,12 +30,23 @@ export const nav = [
   { index: "04", label: "Contact", href: "#contact" },
 ] as const;
 
-/** Her outcomes — deliberately separate from the organisation's figures. */
+/** Her outcomes. `unit` carries the part of the figure that is words rather
+ *  than numerals, so a long one sets smaller instead of wrecking the row. */
 export const proof = [
-  { figure: "1K→9K", label: "Instagram growth driven at Wetech" },
-  { figure: "+80%", label: "Engagement lift over the same period" },
-  { figure: "500+", label: "Social assets designed and shipped" },
-  { figure: "30+ pages", label: "Annual report, designed end to end" },
+  { figure: "1K → 10K", label: "Instagram growth since I joined the team" },
+  {
+    figure: "3",
+    unit: "flagship conferences",
+    label:
+      "Visual direction, event branding, digital, print & on-ground design",
+  },
+  {
+    figure: "10+",
+    unit: "programs & campaigns",
+    label:
+      "Across community, learning, founder and innovation initiatives",
+  },
+  { figure: "500+", label: "Social and campaign assets designed" },
 ] as const;
 
 export type Project = {
@@ -51,120 +74,115 @@ export const projects: Project[] = [
     index: "01",
     title: "The Power Shift",
     client: "Wetech",
-    discipline: "Identity · Key visual · Event system",
+    discipline: "Brand Identity · Event Branding · Digital Design",
     year: "2026",
     blurb:
-      "Identity for the largest gathering of women in tech in Africa. Three key-visual routes explored before one was chosen — chrome, violet and lime against the same locked typographic system.",
-    set: "powershift",
-    slug: "power-shift-kv",
-    span: 5,
-    ratio: "4 / 5",
+      "Brand identity and event system for Wetech’s 2026 flagship conference.",
+    set: "powershift26",
+    slug: "ps26-founder-panel",
+    span: 12,
+    ratio: "16 / 9",
     href: "/work/power-shift",
   },
   {
     index: "02",
-    title: "Wetech 2023/2024",
+    title: "Wetech Impact Report",
     client: "Wetech",
-    discipline: "Environmental branding · Signage · Stage",
-    year: "2023–2024",
-    blurb:
-      "An archway people walk through, a registration wall, a main stage, and a set of hand-held placards that turned two thousand attendees into the campaign.",
-    set: "conference",
-    slug: "conf24-welcome-archway",
-    span: 7,
-    ratio: "3 / 2",
-    href: "/work/wetech-2023-2024",
-  },
-  {
-    index: "03",
-    title: "Impact Report 2025",
-    client: "Wetech",
-    discipline: "Editorial · Information design",
+    discipline: "Editorial Design · Information Design",
     year: "2025",
     blurb:
-      "Thirty pages holding one system across a theory-of-change diagram, distribution charts, impact stories and a partner grid.",
-    set: "report",
-    slug: "report-cover",
-    span: 5,
-    ratio: "1 / 1.414",
+      "Turning a year of impact into a compelling 30-page report through data visualisation, storytelling and editorial design.",
+    set: "reportwide",
+    slug: "report-cover-wide",
+    span: 12,
+    ratio: "16 / 9",
     href: "/work/impact-report",
   },
   {
-    index: "04",
-    title: "wetech.africa",
+    index: "03",
+    title: "Wetech Conferences",
     client: "Wetech",
-    discipline: "Website redesign · Art direction",
+    discipline: "Brand Identity · Event Branding · Digital Design",
+    year: "2023–2024",
+    blurb:
+      "Event branding for Wetech’s 2023 and 2024 conferences, from the digital designs and the stage to the physical attendee experience.",
+    set: "conference",
+    slug: "conf24-main-stage",
+    span: 12,
+    ratio: "16 / 9",
+    href: "/work/wetech-2023-2024",
+  },
+  {
+    index: "04",
+    title: "Wetech Website Redesign",
+    client: "Wetech",
+    discipline: "UI/UX Design · Art Direction",
     year: "2024",
     blurb:
-      "A full redesign of the site, restructuring content and hierarchy around what the organisation actually wanted people to do.",
+      "Redesigning Wetech’s digital home to make its programmes, community and opportunities easier to discover.",
     set: "website",
     slug: "web-landing",
-    span: 7,
-    ratio: "3 / 2",
+    span: 12,
+    ratio: "16 / 9",
     anchor: "top",
     href: "/work/wetech-africa",
   },
-  {
-    index: "05",
-    title: "Making people read the thing nobody reads",
-    client: "Interswitch",
-    discipline: "Internal communications system",
-    year: "2025–2026",
-    blurb:
-      "Compliance digests, a cybersecurity month, an innovation lab. One voice across a fintech’s internal comms — including a gift-declaration notice written in pidgin.",
-    set: "interswitch",
-    slug: "isw-cybersecurity-kv",
-    span: 12,
-    ratio: "4 / 5",
-    gallery: ["isw-cybersecurity-kv", "isw-demo-day-a", "isw-digest-october"],
-    href: "/work/interswitch",
-  },
 ];
-
 export const about = {
-  lead: "I design the things a brand actually meets people through.",
+  lead: "I’m a Brand Designer at Interswitch, where I work across brand communications, campaigns, digital design and events.",
   paragraphs: [
-    "I’m a brand designer at Interswitch, where the work is internal communications for a fintech. Most of what you see here comes out of three years leading brand at Wetech — identity, web, events and campaign. The two could not look less alike, which is the point: a brand system is only worth anything if it survives contact with a real brief.",
-    "The work I like best is the work that has to survive a real room. I am interested in the part after the logo — where a brand has to hold together across a stage backdrop, a data page and a WhatsApp-sized flyer on the same afternoon, and still read as one thing.",
+    "I have also led brand design at Wetech, where I’ve spent the last few years shaping the organisation’s visual identity and bringing its work to life across conferences, programs, campaigns and digital platforms.",
+    "Working across both organisations has given me the opportunity to take on different kinds of briefs, collaborate with different teams and think about how design works across different touchpoints.",
+    "I enjoy making complex things easier to understand, finding the right visual direction for an idea and seeing that idea come together in the real world.",
   ],
-  services: [
-    "Event branding",
-    "Editorial & report design",
-    "Campaign systems",
-    "Art direction",
+  expertise: [
+    "Brand Design",
+    "UI/UX Design",
+    "Event Branding",
+    "Campaign Design",
+    "Digital Design",
   ],
-  tools: ["Figma", "Illustrator", "Photoshop", "Canva"],
+  tools: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "Canva"],
 } as const;
 
-export const archive = [
+export const experience = [
   {
     year: "2025—",
     role: "Brand Designer",
     org: "Interswitch",
-    note: "Internal communications, event collateral, workplace branding",
+    note: "Working across brand communications, campaigns, event collateral and workplace branding.",
   },
   {
     year: "2022—",
     role: "Lead Brand Designer",
     org: "Wetech",
-    note: "Identity, web, conference, campaign",
+    note: "Leading brand design across identity, digital platforms, campaigns and flagship events.",
   },
   {
     year: "2023",
     role: "Product Designer & Technical Writer",
     org: "FMDQ Group",
-    note: "Four internal web applications, research to hi-fi",
+    note: "",
+  },
+] as const;
+
+export const education = [
+  {
+    year: "2019",
+    role: "BSc Computer Science",
+    org: "University of Ilorin",
+    note: "",
   },
   {
     year: "2022",
     role: "Google UX Design Certificate",
     org: "Coursera",
-    note: "Also: HerTechTrail, Tech4Dev Women Techsters",
+    note: "",
   },
   {
-    year: "2019",
-    role: "BSc Computer Science",
-    org: "University of Ilorin",
+    year: "",
+    role: "Additional learning",
+    org: "HerTechTrail, Tech4Dev Women Techsters",
     note: "",
   },
 ] as const;

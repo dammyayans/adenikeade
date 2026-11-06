@@ -32,7 +32,7 @@ const SITE_TITLE = `${site.name} — ${site.role}`;
 /** 150–160 characters, ending on a full stop. Longer is truncated in the
  *  result; shorter wastes the only line of copy Google shows. */
 const HOME_DESCRIPTION =
-  "Brand designer in Lagos building identity, event worlds and campaign systems at volume — for Wetech, Interswitch and FMDQ. Selected work and case studies.";
+  "Brand designer in Lagos creating brand identities, campaigns, websites and live experiences — for Interswitch, Wetech and FMDQ. Selected work and case studies.";
 
 /** A case study's own description: the proposition is already one written
  *  sentence about the work, so it is used rather than a synthesised summary —

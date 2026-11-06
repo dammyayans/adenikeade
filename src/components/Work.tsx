@@ -68,12 +68,13 @@ function Tile({
 }) {
   const { ref, shown } = useReveal<HTMLElement>(0.15);
 
-  const sizes =
-    p.span === 12
-      ? '(min-width: 1200px) 27vw, (min-width: 810px) 30vw, 90vw'
+  const sizes = p.gallery
+    ? '(min-width: 1200px) 27vw, (min-width: 810px) 30vw, 90vw'
+    : p.span === 12
+      ? '(min-width: 1370px) 1310px, 97vw'
       : p.span === 7
-        ? '(min-width: 1200px) 58vw, 92vw'
-        : '(min-width: 1200px) 42vw, 92vw';
+        ? '(min-width: 1370px) 756px, (min-width: 1200px) 53vw, 97vw'
+        : '(min-width: 1370px) 534px, (min-width: 1200px) 38vw, 97vw';
 
   const media = p.gallery ? (
     <div className="grid grid-cols-3 gap-2.5 desktop:gap-4">
