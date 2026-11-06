@@ -113,70 +113,46 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "text",
-            heading: "Finding the visual direction",
-            body: [
-              "I explored the direction as three routes against one locked typographic system — the same wordmark scale, the same stacked title, the same date-and-venue bar along the foot — so the conversation was about how the event should feel rather than which layout to pick.",
-            ],
-          },
-          {
-            kind: "grid",
-            cols: 3,
-            ratio: "4 / 5",
-            items: [
-              {
-                set: "powershift",
-                slug: "power-shift-route-chrome",
-                caption:
-                  "Route A — chrome. Iridescent and optimistic, the most forward-looking of the three.",
-              },
-              {
-                set: "powershift",
-                slug: "power-shift-route-violet",
-                caption:
-                  "Route B — violet. The deepest of the three, and the closest to the earlier editions.",
-              },
-              {
-                set: "powershift",
-                slug: "power-shift-route-lime",
-                caption:
-                  "Route C — lime on black. The boldest of the three, and the coldest.",
-              },
-            ],
-          },
-          {
-            kind: "text",
-            body: [
-              "Holding the type still is what makes a set like this useful. Put side by side, the three read as one event considering its own tone.",
-            ],
-          },
-        ],
-      },
-      {
-        ground: "bone",
-        blocks: [
-          {
-            kind: "text",
             heading: "Across digital touchpoints",
             body: [
-              "With the visual direction established, I extended the identity across the conference’s digital touchpoints, creating a consistent look and feel across the website, social media and promotional materials.",
+              "With the visual direction established, I extended the identity across the conference’s digital touchpoints, designing the screens that carried the event through the day: the main visual, speaker panels, the holding screen and the session timer.",
             ],
+          },
+          {
+            kind: "full",
+            set: "powershift",
+            slug: "power-shift-screen-main",
+            ratio: "16 / 9",
+            caption: "The main screen, with the wordmark set among photographs of attendees.",
+          },
+          {
+            kind: "full",
+            set: "powershift",
+            slug: "power-shift-screen-panel",
+            ratio: "40 / 13",
+            caption: "Panel screen — Breaking Into AI & Emerging Technologies.",
+          },
+          {
+            kind: "full",
+            set: "powershift",
+            slug: "power-shift-screen-interview",
+            ratio: "40 / 13",
+            caption: "Afternoon block screen — the voices on the interview stage.",
           },
           {
             kind: "grid",
             cols: 2,
-            ratio: "4 / 5",
+            ratio: "40 / 13",
             items: [
               {
                 set: "powershift",
-                slug: "power-shift-kv",
-                caption:
-                  "The chosen route, with the date bar and the full sponsor lockup.",
+                slug: "power-shift-screen-holding",
+                caption: "Holding screen.",
               },
               {
                 set: "powershift",
-                slug: "power-shift-speaker-card",
-                caption:
-                  "Speaker announcement, cropped for social with the sponsor bar intact.",
+                slug: "power-shift-screen-timer",
+                caption: "Countdown timer — main stage resumes in 00:60.",
               },
             ],
           },

@@ -5,14 +5,14 @@ export const ROOT = 'raw/Adenike Adedokun - Brand Design';
 export const SETS = {
   // 01 — THE POWER SHIFT · Wetech Conference 2026 · lead case study
   powershift: {
-    dir: 'Flyers',
-    w: 1400,
+    dir: 'Event Branding/Power Shift 2026 Screens',
+    w: 1800,
     files: [
-      ['Frame 2019.png',   'power-shift-kv'],
-      ['Power Shift 1.png','power-shift-route-chrome'],
-      ['Power Shift 2.png','power-shift-route-violet'],
-      ['Power Shift 3.png','power-shift-route-lime'],
-      ['Frame 1946.png',   'power-shift-speaker-card'],
+      ['Main.png',                            'power-shift-screen-main'],
+      ['Panel 2.jpg',                         'power-shift-screen-panel'],
+      ['Afternoon Block Interview Stage.jpg', 'power-shift-screen-interview'],
+      ['Holding Screen.jpg',                  'power-shift-screen-holding'],
+      ['Timer.jpg',                           'power-shift-screen-timer'],
     ],
   },
 

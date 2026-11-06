@@ -1,69 +1,79 @@
 {
   "powershift": [
     {
-      "slug": "power-shift-kv",
-      "source": "Frame 2019.png",
-      "width": 4320,
-      "height": 5400,
-      "ratio": 0.8,
+      "slug": "power-shift-screen-main",
+      "source": "Main.png",
+      "width": 5120,
+      "height": 2880,
+      "ratio": 1.7778,
       "widths": [
         480,
         800,
-        1200
+        1200,
+        1600,
+        1800
       ],
-      "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAABQBQCdASoUABkAPxF8tVOsJ6UiqAqpgCIJYwDN/ywTooX+s/PyZWwqDQuiUP9T0CPAswAA/u6SObK4FZO9aE0LzUT/tiekyaGCUgSY4zX36TvEsS5jfb/ivilyOi9ulvSkD3zeb+umKVSJU5524SgR0CX4K2M1f0DP2c7Bue+61nHiRRnxsHMpnvD+bC3QmAAxGvYVXc4bt4UCulF6mer6mqrmilKEJBpmqeQwgcRuWZY5oLcEMOg9COkfR6JkQA7dwAAA"
+      "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoUAAsAPxFysFAsJqSisAgBgCIJbACdEfgAOEpEaSXmltXVAAD+FsXAsz1Y2xLToQTm3VDiOJtLJA48d7XsPJoMVr316vvMMK6JMap6tu3DzNGp/PbpqHf/BtIlYBeSLCmEsMGX3KB/rd1hGkIh1sR362nuXpOqVvEDsmIEjx7HzOk7pPWoygAA"
     },
     {
-      "slug": "power-shift-route-chrome",
-      "source": "Power Shift 1.png",
-      "width": 1620,
-      "height": 2025,
-      "ratio": 0.8,
+      "slug": "power-shift-screen-panel",
+      "source": "Panel 2.jpg",
+      "width": 5760,
+      "height": 1872,
+      "ratio": 3.0769,
       "widths": [
         480,
         800,
-        1200
+        1200,
+        1600,
+        1800
       ],
-      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBQCdASoUABkAPxF6sFMsJ6QiqA1RgCIJQBjmAkay6sfoXx7QVvhX/IGjSiYqQNNQsAAA/ulKOgfxZJJl1cRab7hC9vQzDlL6FS604jWxq4K4Y554Vcrbgq1ytxz3kgPOY+GeY0P3tu4fIh6Q0eJQkd9hrvwxtY79UqqNC7hG2rDR/u2m4qG2Ru+JNk4g19fAvQbdY6fBb65g6XhTATZq7jT8n4f2bIbwBN6uoSNhJg+HKkRr5J6dl5QyatUsAAA="
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoUAAcAPxF0sFCsJqSisAgBgCIJQBhQBDNmaoz7jPuzYgAA/tq/ZD3fo7izdWfXCO0iOrPSMbUdL/97yOxNsPIpo0NsiT/jm4wurryUG0BaPeCidShO9HbayUTA6HAQtN7tRjhVDQAAAA=="
     },
     {
-      "slug": "power-shift-route-violet",
-      "source": "Power Shift 2.png",
-      "width": 1620,
-      "height": 2025,
-      "ratio": 0.8,
+      "slug": "power-shift-screen-interview",
+      "source": "Afternoon Block Interview Stage.jpg",
+      "width": 5760,
+      "height": 1872,
+      "ratio": 3.0769,
       "widths": [
         480,
         800,
-        1200
+        1200,
+        1600,
+        1800
       ],
-      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBQCdASoUABkAPxGAuFWsKCUjKAgBgCIJYgDE2BBZhubg4kNNvt237osH5qb9e62IAAD+y/ecXDaM6QyY1EbjFS/8k23L4q1GclawbFOeswWOFjjdMtAhKDVxK0uEcWxdlJ2XtzyABA5dcGu3A7CeWPDW2R8fmEVYxrKxfbMSQ7wJwZ8MlHmiUW8Wf8wFB7yGxNoIha61cAwA5YKcWu5eAAA="
+      "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAwCdASoUAAcAPxFysVCsJqSisAgBgCIJZQCzgCHhvYgbGrigBegA/ryTsgCj5+UPAoSCvX1wmMsWQfcSVgQTSAUgduQvjrVmBldj/dqtwABD0OVOI9wvX0jz3oRlPgxEScGIgTyZyQAA"
     },
     {
-      "slug": "power-shift-route-lime",
-      "source": "Power Shift 3.png",
-      "width": 1620,
-      "height": 2025,
-      "ratio": 0.8,
+      "slug": "power-shift-screen-holding",
+      "source": "Holding Screen.jpg",
+      "width": 5760,
+      "height": 1872,
+      "ratio": 3.0769,
       "widths": [
         480,
         800,
-        1200
+        1200,
+        1600,
+        1800
       ],
-      "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBACdASoUABkAPxGAuFWsJ6UjKAgBgCIJZADNwAT8IHszBneS/6uncmwwIwgAAP7cvIbEBru5hp7OKlERg7UGCrITRsUiqQRZx42NaOeWbGMZwTjhvIjFb/2V/YCg1s8cG/jITyLsWYR18iRHcYxFqRLhYlPH0opMIj0iaIu8Tj/+GsRL4+0v7Bbj6i/H2lqh8kz7D1H/wfKCT4JVk+uvNGMKgmZqKxvxoPfXZbiPAo7Bb9tAAAAA"
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBACdASoUAAcAPxFysFAsJqSisAgBgCIJQAXf+A8ogg836pA9s/EhIAAA/uUvqWfuDj7qlVve63Zeo2T+OvCbaKV4iyfXAutGphvs9MsdzwcS189j+n8iTlMawAAA"
     },
     {
-      "slug": "power-shift-speaker-card",
-      "source": "Frame 1946.png",
-      "width": 4320,
-      "height": 5400,
-      "ratio": 0.8,
+      "slug": "power-shift-screen-timer",
+      "source": "Timer.jpg",
+      "width": 5760,
+      "height": 1872,
+      "ratio": 3.0769,
       "widths": [
         480,
         800,
-        1200
+        1200,
+        1600,
+        1800
       ],
-      "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoUABkAPxFws1MsJaSisBgIAYAiCUAZQAI/tRPfBnOQx56rWHOYil+isbT9wAD+0fgzuQ69ikI1OR1gyfCnx6NFwOaE+v1eKCQx1UR+fWCWPY91zVO+an+gHxyBbfU2V5h+WpOA7+b0BThwEM6wd+yzL/ILurEAhOZBUXcKYg5O5NFU1q0cHE0t+w5c8xH225Kv33r3cUuNBmf6VjaEkj0Fv/tRpq63Z9grU0hZc5CJ9Oa4AAA="
+      "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAAcAPxFwsFAsJiSisAgBgCIJbADCgB52diGLtoN9iAAA/umMHK8p6Ea5hzriML8VHwzzEuY4yOyUd5pftvRQ7VMdDkJqNoBEQBEYfbvjf0QAAAA="
     }
   ],
   "powershift26": [
